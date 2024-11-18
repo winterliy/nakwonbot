@@ -81,7 +81,7 @@ compatibilities = [
 탈세벌금 = 0.8
 주식탈세벌금 = 0.8
 주식최소금액 = 100
-주식확률 = 0.3
+주식확률 = 0.65
 
 def stock_random():
     import random

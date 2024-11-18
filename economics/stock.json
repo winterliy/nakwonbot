@@ -3,7 +3,7 @@
         "name": "낙원",
         "exchange": "NEX",
         "category": "정보통신",
-        "price": 22282,
+        "price": 34032,
         "total_shares": 100000000,
         "tradable_shares": 100000000.0
     },
@@ -11,7 +11,7 @@
         "name": "은혜식품",
         "exchange": "NEX",
         "category": "요식업",
-        "price": 21100,
+        "price": 24262,
         "total_shares": 1000000,
         "tradable_shares": 800000.0
     },
@@ -19,7 +19,7 @@
         "name": "복스바겐",
         "exchange": "NEX",
         "category": "자동차제조업",
-        "price": 60582,
+        "price": 60429,
         "total_shares": 85000000,
         "tradable_shares": 25500000.0
     },
@@ -27,7 +27,7 @@
         "name": "아이리갔나",
         "exchange": "NEX",
         "category": "엔터테인먼트",
-        "price": 191153,
+        "price": 130669,
         "total_shares": 500000,
         "tradable_shares": 450000.0
     },
@@ -35,7 +35,7 @@
         "name": "감자라이브",
         "exchange": "NEX",
         "category": "엔터테인먼트",
-        "price": 2212377,
+        "price": 3300042,
         "total_shares": 800000,
         "tradable_shares": 720000.0
     },
@@ -43,7 +43,7 @@
         "name": "에어프라이",
         "exchange": "NEX",
         "category": "항공업",
-        "price": 13643,
+        "price": 18246,
         "total_shares": 1800000,
         "tradable_shares": 1620000.0
     },
@@ -51,7 +51,7 @@
         "name": "조선수자원공사",
         "exchange": "NEX",
         "category": "식수위생사업",
-        "price": 35460,
+        "price": 45376,
         "total_shares": 800000000,
         "tradable_shares": 560000000.0
     },
@@ -59,7 +59,7 @@
         "name": "초롱제약",
         "exchange": "NEX",
         "category": "제약",
-        "price": 16755,
+        "price": 19210,
         "total_shares": 3200000000,
         "tradable_shares": 2880000000.0
     },
@@ -67,7 +67,7 @@
         "name": "대도아카이브",
         "exchange": "DASDAQ",
         "category": "정보통신",
-        "price": 138452,
+        "price": 174922,
         "total_shares": 20090523,
         "tradable_shares": 3817199.37
     },
@@ -75,7 +75,7 @@
         "name": "루나코인",
         "exchange": "DEX",
         "category": "코인",
-        "price": 104,
+        "price": 167,
         "total_shares": 21000000,
         "tradable_shares": 21000000.0
     },
@@ -83,7 +83,7 @@
         "name": "서브컬쳐동아리",
         "exchange": "NEX",
         "category": "정보통신",
-        "price": 48101,
+        "price": 61054,
         "total_shares": 100,
         "tradable_shares": 49.0
     },
@@ -91,7 +91,7 @@
         "name": "STN",
         "exchange": "NEX",
         "category": "언론",
-        "price": 2629,
+        "price": 2989,
         "total_shares": 500000,
         "tradable_shares": 500000.0
     },
@@ -99,7 +99,7 @@
         "name": "자이옌금용지주",
         "exchange": "CCEX",
         "category": "금용업",
-        "price": 241610,
+        "price": 609008,
         "total_shares": 560000000,
         "tradable_shares": 274400000.0
     },
@@ -107,7 +107,7 @@
         "name": "일러스트공방",
         "exchange": "CCEX",
         "category": "SNS",
-        "price": 83451,
+        "price": 174109,
         "total_shares": 12700000,
         "tradable_shares": 12065000.0
     }
