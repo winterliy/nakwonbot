@@ -7,7 +7,6 @@ import os
 # import yt_dlp as youtube_dl
 from datetime import datetime
 from http import client
-import random
 import discord
 # import sys
 # from discord.sinks import WaveSink
@@ -71,6 +70,104 @@ compatibilities = [
     "서로를 잘 이해하는 궁합이에요. 어떤 상황에서도 함께 잘 해결할 수 있을 것입니다.",
     "좋지 않은 궁합이에요. 갈등이 생길 수 있으니 주의가 필요합니다."
 ]
+
+근로소득세 = 0.001
+복권세금 = 0.001
+도박세금 = 0.01
+매수세금 = 0.001
+매도세금 = 0.001
+이체세금 = 0.01
+납세율 = 0.003
+탈세벌금 = 0.8
+주식탈세벌금 = 0.8
+주식최소금액 = 100
+주식확률 = 0.3
+
+def stock_random():
+    import random
+    from datetime import datetime
+
+    stock_path = os.path.join(FOLDER, "stock.json")
+    history_path = os.path.join(FOLDER, "history.json")
+
+    try:
+        # stock.json 읽기
+        with open(stock_path, "r", encoding="utf-8") as f:
+            stock_data = json.load(f)
+
+        if not stock_data:
+            print("등록된 주식이 없습니다.")
+            return
+
+        # history.json 읽기 (없으면 초기화)
+        if not os.path.exists(history_path):
+            with open(history_path, "w", encoding="utf-8") as f:
+                json.dump([], f, indent=4, ensure_ascii=False)
+
+        with open(history_path, "r", encoding="utf-8") as f:
+            history_data = json.load(f)
+
+        # 모든 주식의 가격 랜덤 변경
+        for stock_key, stock_info in stock_data.items():
+            # 기존 가격 가져오기
+            current_price = stock_info.get("price", 100)
+
+            # 상승/하락 비율 설정 (상승 확률 60%, 하락 확률 50%)
+            if random.random() < 주식확률:  # 60% 확률로 상승
+                random_factor = random.uniform(1.01, 1.2)  # +1% ~ +20%
+            else:  # 40% 확률로 하락
+                random_factor = random.uniform(0.9, 0.99)  # -1% ~ -10%
+
+            new_price = max(주식최소금액, int(current_price * random_factor))  # 가격은 최소 1원 이상
+
+            # 주식 정보 업데이트
+            stock_info["price"] = new_price
+
+            # history.json에 변경 기록 추가
+            history_entry = {
+                "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "exchange": stock_info.get("exchange", "Unknown"),  # 거래소 정보
+                "code": stock_info.get("code", "Unknown"),  # 주식 코드
+                "name": stock_key,  # 주식명 (키 값)
+                "price": new_price  # 한 주당 주가
+            }
+            history_data.append(history_entry)
+
+        # stock.json 업데이트
+        with open(stock_path, "w", encoding="utf-8") as f:
+            json.dump(stock_data, f, indent=4, ensure_ascii=False)
+
+        # history.json 업데이트
+        with open(history_path, "w", encoding="utf-8") as f:
+            json.dump(history_data, f, indent=4, ensure_ascii=False)
+
+        print("모든 주식의 가격이 랜덤하게 변경되고, 변경 이력이 저장되었습니다!")
+
+    except Exception as e:
+        print(f"주식 가격 변경 중 오류가 발생했습니다: {e}")
+
+def int_changer():
+    try:
+        # JSON 파일 읽기
+        with open('economics/account.json', "r", encoding="utf-8") as f:
+            account_data = json.load(f)
+
+        # 데이터 변환
+        for user_id, account_info in account_data.items():
+            # cash 값을 정수로 변환
+            account_info["cash"] = int(account_info["cash"])
+
+            # stocks 값을 정수로 변환
+            account_info["stocks"] = {stock: int(quantity) for stock, quantity in account_info["stocks"].items()}
+
+        # 변환된 데이터 저장
+        with open('economics/account.json', "w", encoding="utf-8") as f:
+            json.dump(account_data, f, indent=4, ensure_ascii=False)
+
+        print("account.json 파일의 cash와 stocks 값을 성공적으로 정수로 변환했습니다!")
+
+    except Exception as e:
+        print(f"오류가 발생했습니다: {e}")
 
 client = discord.Client(intents=intents)
 
@@ -149,6 +246,57 @@ class MyClient(discord.Client):
 
             await message.channel.send(f"{reward}원이 지급되었습니다.")
 
+            user_id = str(message.author.id)  # 유저 ID 가져오기
+
+            # tax_person.json 파일 확인
+            if os.path.exists(TAX_PERSON_FILE):
+                with open(TAX_PERSON_FILE, 'r', encoding="utf-8") as f:
+                    tax_person_data = json.load(f)
+            else:
+                tax_person_data = {}
+
+            import datetime
+            today_date = datetime.datetime.now().strftime("%Y-%m-%d")  # 오늘 날짜
+
+            # 납세 처리: 현금과 주식 확인 및 납세 진행
+            account_path = os.path.join(FOLDER, "account.json")
+            with open(account_path, "r", encoding="utf-8") as f:
+                account_data = json.load(f)
+
+            if user_id not in account_data:
+                await message.channel.send("계좌가 존재하지 않습니다. 계좌를 개설해주세요.")
+            else:
+                user_account = account_data[user_id]
+                cash_balance = user_account["cash"]
+
+                tax_amount = cash_balance * 근로소득세  # 소득세 10% 세금
+
+                # 현금 차감
+                user_account["cash"] -= tax_amount
+
+                # 로또 기금에 세금 금액 추가
+                lotto_path = os.path.join(FOLDER, "lotto.json")
+                if not os.path.exists(lotto_path):
+                    # 로또 파일이 없으면 기본값을 설정하여 생성
+                    lotto_data = {"cash": 0, "stocks": {}}
+                else:
+                    try:
+                        with open(lotto_path, "r", encoding="utf-8") as f:
+                            lotto_data = json.load(f)
+                    except json.JSONDecodeError:
+                        # JSON 오류가 발생하면 기본값으로 초기화
+                        lotto_data = {"cash": 0, "stocks": {}}
+
+                lotto_data["cash"] += tax_amount  # 세금 금액을 로또 기금에 추가
+
+                # 로또 파일에 업데이트된 데이터 저장
+                with open(lotto_path, "w", encoding="utf-8") as f:
+                    json.dump(lotto_data, f, indent=4, ensure_ascii=False)
+
+                # 계좌 정보 업데이트: 차감된 현금과 주식 정보 저장
+                with open(account_path, "w", encoding="utf-8") as f:
+                    json.dump(account_data, f, ensure_ascii=False, indent=4)
+
         if message.content.startswith("!납세"):
             user_id = str(message.author.id)  # 유저 ID 가져오기
 
@@ -178,7 +326,7 @@ class MyClient(discord.Client):
                     cash_balance = user_account["cash"]
                     stock_balance = user_account["stocks"]
 
-                    tax_amount = cash_balance * 0.5  # 50% 세금
+                    tax_amount = cash_balance * 납세율  # 3% 세금
 
                     # 현금이 부족하면 납세할 수 없음
                     if cash_balance < tax_amount:
@@ -186,26 +334,6 @@ class MyClient(discord.Client):
                     else:
                         # 현금 차감
                         user_account["cash"] -= tax_amount
-
-                        # 주식 차감 (주식이 있을 경우 일부 또는 전체 차감)
-                        if stock_balance:
-                            stock_tax = tax_amount  # 세금을 주식으로 일부 차감할 금액
-                            total_stock_value = sum(stock_balance.values())  # 주식 총액
-
-                            if total_stock_value > stock_tax:
-                                # 주식에서 세금을 일부 차감
-                                for stock, amount in list(stock_balance.items()):
-                                    stock_value = amount  # 주식의 개수(금액은 없다고 가정)
-                                    if stock_value >= stock_tax:
-                                        stock_balance[stock] -= stock_tax
-                                        break
-                                    else:
-                                        stock_balance[stock] = 0
-                                        stock_tax -= stock_value
-
-                            else:
-                                # 주식 총액으로 세금 모두 차감
-                                stock_balance.clear()
 
                         # 로또 기금에 세금 금액 추가
                         lotto_path = os.path.join(FOLDER, "lotto.json")
@@ -221,17 +349,12 @@ class MyClient(discord.Client):
                                 lotto_data = {"cash": 0, "stocks": {}}
 
                         lotto_data["cash"] += tax_amount  # 세금 금액을 로또 기금에 추가
-                        # 세금 처리가 된 주식을 로또 기금에 추가
-                        for stock, amount in stock_balance.items():
-                            if amount > 0:
-                                lotto_data["stocks"][stock] = lotto_data["stocks"].get(stock, 0) + amount
 
                         # 로또 파일에 업데이트된 데이터 저장
                         with open(lotto_path, "w", encoding="utf-8") as f:
                             json.dump(lotto_data, f, indent=4, ensure_ascii=False)
 
-                        # 계좌 정보 업데이트: 차감된 현금과 주식 정보 저장
-                        user_account["stocks"] = stock_balance  # 업데이트된 주식 정보 저장
+                        # 계좌 정보 업데이트: 차감된 현금 저장
                         with open(account_path, "w", encoding="utf-8") as f:
                             json.dump(account_data, f, ensure_ascii=False, indent=4)
 
@@ -240,7 +363,7 @@ class MyClient(discord.Client):
                         with open(TAX_PERSON_FILE, 'w', encoding="utf-8") as f:
                             json.dump(tax_person_data, f, ensure_ascii=False, indent=4)
 
-                        await message.channel.send(f"납세가 완료되었습니다. {tax_amount} 원이 차감되었습니다. 주식도 일부 차감되었습니다.")
+                        await message.channel.send(f"납세가 완료되었습니다. {tax_amount} 원이 차감되었습니다.")
 
         if message.content.startswith("!로또참여"):
             user_id = str(message.author.id)
@@ -273,6 +396,57 @@ class MyClient(discord.Client):
 
             await message.channel.send("로또에 참가하였습니다. 행운을 빕니다!")
 
+            user_id = str(message.author.id)  # 유저 ID 가져오기
+
+            # tax_person.json 파일 확인
+            if os.path.exists(TAX_PERSON_FILE):
+                with open(TAX_PERSON_FILE, 'r', encoding="utf-8") as f:
+                    tax_person_data = json.load(f)
+            else:
+                tax_person_data = {}
+
+            import datetime
+            today_date = datetime.datetime.now().strftime("%Y-%m-%d")  # 오늘 날짜
+
+            # 납세 처리: 현금과 주식 확인 및 납세 진행
+            account_path = os.path.join(FOLDER, "account.json")
+            with open(account_path, "r", encoding="utf-8") as f:
+                account_data = json.load(f)
+
+            if user_id not in account_data:
+                await message.channel.send("계좌가 존재하지 않습니다. 계좌를 개설해주세요.")
+            else:
+                user_account = account_data[user_id]
+                cash_balance = user_account["cash"]
+
+                tax_amount = cash_balance * 복권세금  # 소득세 10% 세금
+
+                # 현금 차감
+                user_account["cash"] -= tax_amount
+
+                # 로또 기금에 세금 금액 추가
+                lotto_path = os.path.join(FOLDER, "lotto.json")
+                if not os.path.exists(lotto_path):
+                    # 로또 파일이 없으면 기본값을 설정하여 생성
+                    lotto_data = {"cash": 0, "stocks": {}}
+                else:
+                    try:
+                        with open(lotto_path, "r", encoding="utf-8") as f:
+                            lotto_data = json.load(f)
+                    except json.JSONDecodeError:
+                        # JSON 오류가 발생하면 기본값으로 초기화
+                        lotto_data = {"cash": 0, "stocks": {}}
+
+                lotto_data["cash"] += tax_amount  # 세금 금액을 로또 기금에 추가
+
+                # 로또 파일에 업데이트된 데이터 저장
+                with open(lotto_path, "w", encoding="utf-8") as f:
+                    json.dump(lotto_data, f, indent=4, ensure_ascii=False)
+
+                # 계좌 정보 업데이트: 차감된 현금과 주식 정보 저장
+                with open(account_path, "w", encoding="utf-8") as f:
+                    json.dump(account_data, f, ensure_ascii=False, indent=4)
+
         if message.content.startswith("$tax check"):
             account_path = os.path.join(FOLDER, "account.json")
             tax_path = os.path.join(FOLDER, "tax.json")
@@ -290,8 +464,8 @@ class MyClient(discord.Client):
             penalized_users = []
             for user_id, account in account_data.items():
                 if user_id not in tax_data and account["cash"] >= 100000:
-                    penalty_cash = int(account["cash"] * 0.5)
-                    penalty_stocks = {stock: int(amount * 0.8) for stock, amount in account["stocks"].items()}
+                    penalty_cash = int(account["cash"] * 탈세벌금)
+                    penalty_stocks = {stock: int(amount * 주식탈세벌금) for stock, amount in account["stocks"].items()}
 
                     account["cash"] -= penalty_cash
                     for stock, amount in penalty_stocks.items():
@@ -396,6 +570,8 @@ class MyClient(discord.Client):
             await message.channel.send(f"축하합니다! {winner_id}님이 로또에 당첨되었습니다!")
 
         if message.content.startswith("!bet"):
+            stock_random()
+            int_changer()
             args = message.content.split()
             if len(args) != 2:
                 await message.channel.send("올바른 형식: `!bet <금액>`")
@@ -493,8 +669,60 @@ class MyClient(discord.Client):
 
             await message.channel.send(result)
 
+            user_id = str(message.author.id)  # 유저 ID 가져오기
+
+            # tax_person.json 파일 확인
+            if os.path.exists(TAX_PERSON_FILE):
+                with open(TAX_PERSON_FILE, 'r', encoding="utf-8") as f:
+                    tax_person_data = json.load(f)
+            else:
+                tax_person_data = {}
+
+            import datetime
+            today_date = datetime.datetime.now().strftime("%Y-%m-%d")  # 오늘 날짜
+
+            # 납세 처리: 현금과 주식 확인 및 납세 진행
+            account_path = os.path.join(FOLDER, "account.json")
+            with open(account_path, "r", encoding="utf-8") as f:
+                account_data = json.load(f)
+
+            if user_id not in account_data:
+                await message.channel.send("계좌가 존재하지 않습니다. 계좌를 개설해주세요.")
+            else:
+                user_account = account_data[user_id]
+                cash_balance = user_account["cash"]
+
+                tax_amount = cash_balance * 도박세금  # 소득세 10% 세금
+
+                # 현금 차감
+                user_account["cash"] -= tax_amount
+
+                # 로또 기금에 세금 금액 추가
+                lotto_path = os.path.join(FOLDER, "lotto.json")
+                if not os.path.exists(lotto_path):
+                    # 로또 파일이 없으면 기본값을 설정하여 생성
+                    lotto_data = {"cash": 0, "stocks": {}}
+                else:
+                    try:
+                        with open(lotto_path, "r", encoding="utf-8") as f:
+                            lotto_data = json.load(f)
+                    except json.JSONDecodeError:
+                        # JSON 오류가 발생하면 기본값으로 초기화
+                        lotto_data = {"cash": 0, "stocks": {}}
+
+                lotto_data["cash"] += tax_amount  # 세금 금액을 로또 기금에 추가
+
+                # 로또 파일에 업데이트된 데이터 저장
+                with open(lotto_path, "w", encoding="utf-8") as f:
+                    json.dump(lotto_data, f, indent=4, ensure_ascii=False)
+
+                # 계좌 정보 업데이트: 차감된 현금과 주식 정보 저장
+                with open(account_path, "w", encoding="utf-8") as f:
+                    json.dump(account_data, f, ensure_ascii=False, indent=4)
+
         # !매수 명령어 처리
         elif message.content.startswith("!매수"):
+            int_changer()
             args = message.content.split()[1:]  # 명령어 인자 분리
             user_id = str(message.author.id)  # 유저 ID 가져오기
 
@@ -543,10 +771,62 @@ class MyClient(discord.Client):
             with open(ACCOUNT_FILE, 'w') as f:
                 json.dump(account_data, f, indent=4)
 
+            user_id = str(message.author.id)  # 유저 ID 가져오기
+
+            # tax_person.json 파일 확인
+            if os.path.exists(TAX_PERSON_FILE):
+                with open(TAX_PERSON_FILE, 'r', encoding="utf-8") as f:
+                    tax_person_data = json.load(f)
+            else:
+                tax_person_data = {}
+
+            import datetime
+            today_date = datetime.datetime.now().strftime("%Y-%m-%d")  # 오늘 날짜
+
+            # 납세 처리: 현금과 주식 확인 및 납세 진행
+            account_path = os.path.join(FOLDER, "account.json")
+            with open(account_path, "r", encoding="utf-8") as f:
+                account_data = json.load(f)
+
+            if user_id not in account_data:
+                await message.channel.send("계좌가 존재하지 않습니다. 계좌를 개설해주세요.")
+            else:
+                user_account = account_data[user_id]
+                cash_balance = user_account["cash"]
+
+                tax_amount = cash_balance * 매수세금  # 소득세 10% 세금
+
+                # 현금 차감
+                user_account["cash"] -= tax_amount
+
+                # 로또 기금에 세금 금액 추가
+                lotto_path = os.path.join(FOLDER, "lotto.json")
+                if not os.path.exists(lotto_path):
+                    # 로또 파일이 없으면 기본값을 설정하여 생성
+                    lotto_data = {"cash": 0, "stocks": {}}
+                else:
+                    try:
+                        with open(lotto_path, "r", encoding="utf-8") as f:
+                            lotto_data = json.load(f)
+                    except json.JSONDecodeError:
+                        # JSON 오류가 발생하면 기본값으로 초기화
+                        lotto_data = {"cash": 0, "stocks": {}}
+
+                lotto_data["cash"] += tax_amount  # 세금 금액을 로또 기금에 추가
+
+                # 로또 파일에 업데이트된 데이터 저장
+                with open(lotto_path, "w", encoding="utf-8") as f:
+                    json.dump(lotto_data, f, indent=4, ensure_ascii=False)
+
+                # 계좌 정보 업데이트: 차감된 현금과 주식 정보 저장
+                with open(account_path, "w", encoding="utf-8") as f:
+                    json.dump(account_data, f, ensure_ascii=False, indent=4)
+
             await message.channel.send(f"{quantity}개의 {stock_code} 주식을 매수했습니다. 잔액: {account_data[user_id]['cash']} 원")
 
         # !매도 명령어 처리
         elif message.content.startswith("!매도"):
+            int_changer()
             args = message.content.split()[1:]  # 명령어 인자 분리
             user_id = str(message.author.id)  # 유저 ID 가져오기
 
@@ -592,9 +872,62 @@ class MyClient(discord.Client):
             with open(ACCOUNT_FILE, 'w') as f:
                 json.dump(account_data, f, indent=4)
 
+            user_id = str(message.author.id)  # 유저 ID 가져오기
+
+            # tax_person.json 파일 확인
+            if os.path.exists(TAX_PERSON_FILE):
+                with open(TAX_PERSON_FILE, 'r', encoding="utf-8") as f:
+                    tax_person_data = json.load(f)
+            else:
+                tax_person_data = {}
+
+            import datetime
+            today_date = datetime.datetime.now().strftime("%Y-%m-%d")  # 오늘 날짜
+
+            # 납세 처리: 현금과 주식 확인 및 납세 진행
+            account_path = os.path.join(FOLDER, "account.json")
+            with open(account_path, "r", encoding="utf-8") as f:
+                account_data = json.load(f)
+
+            if user_id not in account_data:
+                await message.channel.send("계좌가 존재하지 않습니다. 계좌를 개설해주세요.")
+            else:
+                user_account = account_data[user_id]
+                cash_balance = user_account["cash"]
+
+                tax_amount = cash_balance * 매도세금 # 소득세 10% 세금
+
+                # 현금 차감
+                user_account["cash"] -= tax_amount
+
+                # 로또 기금에 세금 금액 추가
+                lotto_path = os.path.join(FOLDER, "lotto.json")
+                if not os.path.exists(lotto_path):
+                    # 로또 파일이 없으면 기본값을 설정하여 생성
+                    lotto_data = {"cash": 0, "stocks": {}}
+                else:
+                    try:
+                        with open(lotto_path, "r", encoding="utf-8") as f:
+                            lotto_data = json.load(f)
+                    except json.JSONDecodeError:
+                        # JSON 오류가 발생하면 기본값으로 초기화
+                        lotto_data = {"cash": 0, "stocks": {}}
+
+                lotto_data["cash"] += tax_amount  # 세금 금액을 로또 기금에 추가
+
+                # 로또 파일에 업데이트된 데이터 저장
+                with open(lotto_path, "w", encoding="utf-8") as f:
+                    json.dump(lotto_data, f, indent=4, ensure_ascii=False)
+
+                # 계좌 정보 업데이트: 차감된 현금과 주식 정보 저장
+                with open(account_path, "w", encoding="utf-8") as f:
+                    json.dump(account_data, f, ensure_ascii=False, indent=4)
+
             await message.channel.send(f"{quantity}개의 {stock_code} 주식을 매도했습니다. 잔액: {account_data[user_id]['cash']} 원")
 
         if message.content.startswith("!주식기록"):
+            stock_random()
+            int_changer()
             history_path = os.path.join(FOLDER, "history.json")
             args = message.content.split()
 
@@ -635,6 +968,8 @@ class MyClient(discord.Client):
                 await message.channel.send(f"주식 기록 조회 중 오류가 발생했습니다: {e}")
 
         if message.content.startswith("!주식정보"):
+            stock_random()
+            int_changer()
             args = message.content.split()
             if len(args) != 3:
                 await message.channel.send("올바른 형식: `!주식정보 <거래소> <주식코드>`")
@@ -660,6 +995,8 @@ class MyClient(discord.Client):
             await message.channel.send(embed=embed)
 
         if message.content.startswith("!주식기록"):
+            stock_random()
+            int_changer()
             args = message.content.split()
             if len(args) != 3:
                 await message.channel.send("올바른 형식: `!주식기록 <거래소> <주식코드>`")
@@ -738,9 +1075,13 @@ class MyClient(discord.Client):
                     # 기존 가격 가져오기
                     current_price = stock_info.get("price", 100)
 
-                    # 새로운 가격 계산 (기존 가격의 ±20% 범위 내에서 변경)
-                    random_factor = random.uniform(0.8, 1.2)
-                    new_price = max(1, int(current_price * random_factor))  # 가격은 최소 1원 이상
+                    # 상승/하락 비율 설정 (상승 확률 60%, 하락 확률 50%)
+                    if random.random() < 0.6:  # 60% 확률로 상승
+                        random_factor = random.uniform(1.01, 1.2)  # +1% ~ +20%
+                    else:  # 40% 확률로 하락
+                        random_factor = random.uniform(0.9, 0.99)  # -1% ~ -10%
+
+                    new_price = max(10000, int(current_price * random_factor))  # 가격은 최소 1원 이상
 
                     # 주식 정보 업데이트
                     stock_info["price"] = new_price
@@ -777,6 +1118,42 @@ class MyClient(discord.Client):
                 with open(daily_reward_path, "w", encoding="utf-8") as f:
                     json.dump([], f, ensure_ascii=False, indent=4)
                 await message.channel.send("Daily reward 기록이 초기화되었습니다!")
+            except Exception as e:
+                await message.channel.send(f"초기화에 실패했습니다: {e}")
+
+        if message.content == "$reset_tax_person":
+            # tax_person.json 파일 경로
+            tax_person_path = os.path.join(FOLDER, "tax_person.json")
+
+            # tax_person.json 파일 초기화
+            try:
+                with open(tax_person_path, "w", encoding="utf-8") as f:
+                    json.dump([], f, ensure_ascii=False, indent=4)
+                await message.channel.send("tax person 기록이 초기화되었습니다!")
+            except Exception as e:
+                await message.channel.send(f"초기화에 실패했습니다: {e}")
+
+        if message.content == "$reset_lotto_player":
+            # lotto_player.json 파일 경로
+            lotto_player_path = os.path.join(FOLDER, "lotto_player.json")
+
+            # lotto_player.json 파일 초기화
+            try:
+                with open(lotto_player_path, "w", encoding="utf-8") as f:
+                    json.dump([], f, ensure_ascii=False, indent=4)
+                await message.channel.send("lotto player 기록이 초기화되었습니다!")
+            except Exception as e:
+                await message.channel.send(f"초기화에 실패했습니다: {e}")
+
+        if message.content == "$reset_history":
+            # history.json 파일 경로
+            history_path = os.path.join(FOLDER, "history.json")
+
+            # history.json 파일 초기화
+            try:
+                with open(history_path, "w", encoding="utf-8") as f:
+                    json.dump([], f, ensure_ascii=False, indent=4)
+                await message.channel.send("주식기록이 초기화되었습니다!")
             except Exception as e:
                 await message.channel.send(f"초기화에 실패했습니다: {e}")
 
@@ -978,6 +1355,7 @@ class MyClient(discord.Client):
 
         # !이체 명령어 처리
         if message.content.startswith("!이체"):
+            int_changer()
             args = message.content.split()[1:]  # 명령어 인자 분리
             user_id = str(message.author.id)  # 유저 ID 가져오기
 
@@ -1061,6 +1439,8 @@ class MyClient(discord.Client):
 
         # !지갑 명령어 처리
         if message.content.startswith("!지갑"):
+            stock_random()
+            int_changer()
             user_id = str(message.author.id)
 
             # 계좌 정보 로딩
@@ -1087,12 +1467,11 @@ class MyClient(discord.Client):
                 stock_info = stock_data.get(stock_key)
                 if stock_info:
                     exchange = stock_info.get("exchange")
-                    stock_code = stock_info.get("code")
                     stock_name = stock_info.get("name", "알 수 없는 주식")
                     stock_price = stock_info.get("price", 0)  # 주식의 현재 가격을 가져옴
                     stock_value = stock_price * quantity  # 주식의 총 가치를 계산
                     total_stock_value += stock_value  # 총 자산에 더하기
-                    stock_message += f"거래소: {exchange}, 코드: {stock_code}, 이름: {stock_name}, 수량: {quantity}, 현재가: {stock_price}원, 자산 가치: {stock_value}원\n"
+                    stock_message += f"거래소: {exchange}, 이름: {stock_name}, 수량: {quantity}, 현재가: {stock_price}원, 자산 가치: {stock_value}원\n"
                 else:
                     stock_message += f"거래소, 코드 정보 없음: {stock_key}, 수량: {quantity}\n"
 
@@ -1144,6 +1523,8 @@ class MyClient(discord.Client):
                 await message.channel.send(f"도박의 보상 배율이 {value}로 설정되었습니다.")
 
         if message.content == "!주식목록":
+            stock_random()
+            int_changer()
             stock_path = os.path.join(FOLDER, "stock.json")
 
             try:
@@ -1175,29 +1556,84 @@ class MyClient(discord.Client):
             except Exception as e:
                 await message.channel.send(f"주식 목록 조회 중 오류가 발생했습니다: {e}")
 
-        if message.content == "$help":
+        if message.content == "!랭킹":
+            stock_random()
+            int_changer()
+            import operator
+
+            account_path = os.path.join(FOLDER, "account.json")
+            stock_path = os.path.join(FOLDER, "stock.json")
+
+            try:
+                # account.json 읽기
+                with open(account_path, "r", encoding="utf-8") as f:
+                    account_data = json.load(f)
+
+                # stock.json 읽기
+                with open(stock_path, "r", encoding="utf-8") as f:
+                    stock_data = json.load(f)
+
+                # 유저별 총 자산 계산
+                user_assets = {}
+                for user_id, account_info in account_data.items():
+                    # 현금 자산
+                    total_assets = account_info.get("cash", 0)
+
+                    # 주식 자산
+                    stocks = account_info.get("stocks", {})
+                    for stock_code, quantity in stocks.items():
+                        stock_price = stock_data.get(stock_code, {}).get("price", 0)
+                        total_assets += stock_price * quantity  # 주식 가격 * 보유 수량
+
+                    # 총 자산 저장
+                    user_assets[user_id] = total_assets
+
+                # 총 자산 기준으로 정렬
+                sorted_users = sorted(user_assets.items(), key=operator.itemgetter(1), reverse=True)
+
+                # 순위 표시
+                embed = discord.Embed(
+                    title="🏆 총 자산 순위",
+                    description="유저들의 총 자산 순위를 확인하세요!",
+                    color=discord.Color.gold()
+                )
+                for rank, (user_id, assets) in enumerate(sorted_users, start=1):
+                    user = await client.fetch_user(user_id)  # 유저 이름 가져오기
+                    embed.add_field(name=f"{rank}위: {user.name}", value=f"총 자산: {assets:,.2f}원", inline=False)
+
+                await message.channel.send(embed=embed)
+
+            except Exception as e:
+                await message.channel.send(f"랭킹 계산 중 오류가 발생했습니다: {e}")
+
+        if message.content == "$cmd":
+            stock_random()
+            int_changer()
             embed = discord.Embed(title="사용 가능한 명령어 목록", color=0x3498db)
 
             # 명령어 설명 추가
-            embed.add_field(name="$help", value="명령어와 설명을 볼 수 있습니다.", inline=False)
+            embed.add_field(name="$cmd", value="명령어와 설명을 볼 수 있습니다.", inline=False)
             embed.add_field(name="$nmd <갯수>", value="<갯수>만큼 메시지를 삭제할 수 있습니다.", inline=False)
             embed.add_field(name="!계좌개설", value="계좌를 생성하고 초기 자금을 설정합니다.", inline=False)
-            #embed.add_field(name="!이체 <플레이어id> <금액>", value="다른 플레이어에게 금액을 송금합니다.", inline=False)
+            embed.add_field(name="!이체 <플레이어id> <금액>", value="다른 플레이어에게 금액을 송금합니다.", inline=False)
             embed.add_field(name="!일급", value="하루에 한 번 50,000원을 지급받습니다.", inline=False)
             embed.add_field(name="!주식목록", value="현재 상장된 모든 주식의 정보를 확인합니다.", inline=False)
             embed.add_field(name="!매수 <주식명> <수량>", value="원하는 주식을 지정한 수량만큼 구매합니다.", inline=False)
             embed.add_field(name="!매도 <주식명> <수량>", value="보유 중인 주식을 지정한 수량만큼 판매합니다.", inline=False)
-            embed.add_field(name="!if <주식명>", value="특정 주식의 정보를 확인합니다.", inline=False)
-            embed.add_field(name="!잔고", value="현재 자신의 계좌 잔고를 확인합니다.", inline=False)
-            embed.add_field(name="!history <주식명>", value="특정 주식의 가격 변동 기록을 확인합니다.", inline=False)
+            embed.add_field(name="!주식정보 <주식명>", value="특정 주식의 정보를 확인합니다.", inline=False)
+            embed.add_field(name="!지갑", value="현재 자신의 계좌 잔고를 확인합니다.", inline=False)
+            embed.add_field(name="!주식기록 <주식명>", value="특정 주식의 가격 변동 기록을 확인합니다.", inline=False)
             embed.add_field(name="!bet <금액>", value="도박을 할 수 있습니다. 금액을 설정하고 도박에 참여하세요.", inline=False)
             embed.add_field(name="!운세", value="운세를 볼 수 있습니다.", inline=False)
             embed.add_field(name="!궁합 <유저1> <유저2>", value="궁합을 볼 수 있습니다. 유저 간의 궁합을 시험해보세요.", inline=False)
+            embed.add_field(name="!로또참여", value="10만원을 내고 로또에 참가할 수 있습니다. 당신의 운을 시험해보세요.", inline=False)
+            embed.add_field(name="!랭킹", value="총 자산의 순위을 볼 수 있습니다. 유저들의 자산을 확인해보세요.", inline=False)
 
             await message.channel.send(embed=embed)
 
         if message.content.startswith("!운세"):
             # 사용자가 랜덤으로 운세를 받음
+            import random
             fortune = random.choice(fortunes)
             await message.channel.send(f"{message.author.mention}님의 운세: {fortune}")
 
@@ -1214,6 +1650,7 @@ class MyClient(discord.Client):
                 user2 = users[2]
 
                 # 궁합을 랜덤으로 선택
+                import  random
                 compatibility = random.choice(compatibilities)
                 await message.channel.send(f"{user1}님과 {user2}님의 궁합: {compatibility}")
 
@@ -1232,7 +1669,7 @@ class MyClient(discord.Client):
                 deleted = await message.channel.purge(limit=count)
                 await message.channel.send(f"{len(deleted)}개의 메시지가 삭제되었습니다.", delete_after=5)
             except (IndexError, ValueError):
-                await message.channel.send("사용법: !delete [숫자]", delete_after=5)
+                await message.channel.send("사용법: $nmd [숫자]", delete_after=5)
             except discord.Forbidden:
                 await message.channel.send("메시지를 삭제할 권한이 없습니다.", delete_after=5)
 
@@ -1251,6 +1688,7 @@ class MyClient(discord.Client):
                 file_names.append(attachment.filename)
 
     async def on_reaction_add(self, reaction, user):
+        stock_random()
         if user.bot:
             return
 
@@ -1268,6 +1706,7 @@ class MyClient(discord.Client):
         f.close()
 
     async def on_message_edit(self, before, after):
+        stock_random()
         bc = before.content
         ac = after.content
         now = datetime.now()
