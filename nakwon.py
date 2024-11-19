@@ -278,7 +278,7 @@ class MyClient(discord.Client):
             try:
                 args = message.content.split()
                 if len(args) != 2:
-                    await message.channel.send("올바른 형식: `!set_probability <0~1 사이 값>`")
+                    await message.channel.send("올바른 형식: `$주식등락률설정 <0~1 사이 값>`")
                     return
 
                 value = float(args[1])
