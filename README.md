@@ -31,12 +31,9 @@
 - ~~!월급 :~~
 - !지갑 : 본인의 account.json를 출력. 임베드에 출력.
     - !납세 : 세금을 내는 명령어. 하루에 한 번 작동. account.json에서 현금의 3%와 보유한 주식의 20%를  lotto.json에 저장. 납세한 유저는 tax.json에 저장.ㅇ
-- !로또참여 : 현금 10만원을 내고 로또에 참여. lotto_player.json에 유저 저장
 - $tax : 세금에 대한 설정 명령어. $tax 인자 형식으로 씀. (ex. $tax check)
     - check : 계좌에 10만원 이상이 있는 사람 중에 tax.json에 없는 사람의 account.json에서 현금 50%와 주식의 80%를 빼서 lotto.json에 저장. 후에 tax.json을 비운다
-- $lotto : 로또에 대한 설정 명령어. $lotto 인자 형식으로 씀. (ex. $lotto start)
-    - start : lotto.json에 있는 돈과 주식을 lotto_player.json에 있는 유저 중 한 명을 선출하여 랜덤하게 지급. 지급 후에는 lotto_player.json을 비운다
-    
+
 4. 주식 시스템
 - !매도 <거래소> <주식코드> <주> : 주만큼 주식을 매도
 - !매수 <거래소> <주식코드> <주> : 주만큼 주식을 매수
@@ -52,6 +49,8 @@
     - split <거래소> <주식코드> <주> : 주식을 액면분활
     - merge <거래소> <주식코드> <주> : 주식을 액면병합
     - deal <거래소>  <주식코드> <거래 가능한 비율> : 발행된 주식 중 거래 가능한 비율을 정한다. stock.json에 저장.
+- $set_stock_probability : 주식 등락 확률 설정
+- $show_stock_probability : 주식 등락 확률 출력
 
 5. 도박 시스템
 - !bet <금액> : 도박 명령어. 금액만큼 배팅한다. 설정된 확률에 따라 성공시, gamble_reward.json에 정해진 수에 따라 배로 지급, 실패시 배팅한 금액을 lotto.json에 저장. 기본 확률은 50:50으로 저장
@@ -64,6 +63,14 @@
 - ~~!폐업 <사명> :~~
 - ~~!인사 <플레이어 아이디> <직급>~~
 - ~~인사, 회계, 재정, 경영, 마케팅, 서비스, 고객응대, 기업전략, 정책, 법무, 복지, 노동, 등등~~
+
+7. 로또시스템
+- !로또참여 : 현금 10만원을 내고 로또에 참여. lotto_player.json에 유저 저장
+- $lotto : 로또에 대한 설정 명령어. $lotto 인자 형식으로 씀. (ex. $lotto start)
+  - start : lotto.json에 있는 돈과 주식을 lotto_player.json에 있는 유저 중 한 명을 선출하여 랜덤하게 지급. 지급 후에는 lotto_player.json을 비운다
+- !로또체크 : 복권기금 잔고 체크
+    
+
 
 Powerd by NAKWON
 (C) 2024. NAKWON INC. All rights reserved.
