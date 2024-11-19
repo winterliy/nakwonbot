@@ -894,6 +894,8 @@ class MyClient(discord.Client):
                     json.dump(account_data, f, ensure_ascii=False, indent=4)
 
             await message.channel.send(f"{quantity}개의 {stock_code} 주식을 매수했습니다. 잔액: {account_data[user_id]['cash']} 원")
+            stock_random()
+            int_changer()
 
         # !매도 명령어 처리
         elif message.content.startswith("!매도"):
@@ -995,6 +997,8 @@ class MyClient(discord.Client):
                     json.dump(account_data, f, ensure_ascii=False, indent=4)
 
             await message.channel.send(f"{quantity}개의 {stock_code} 주식을 매도했습니다. 잔액: {account_data[user_id]['cash']} 원")
+            stock_random()
+            int_changer()
 
         if message.content.startswith("!주식기록"):
             stock_random()
