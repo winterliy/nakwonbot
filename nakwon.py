@@ -274,7 +274,7 @@ class MyClient(discord.Client):
             )
 
         # '!set_probability <값>' 명령어 처리
-        if message.content.startswith("주식등락률설정"):
+        if message.content.startswith("$주식등락률설정"):
             try:
                 args = message.content.split()
                 if len(args) != 2:
