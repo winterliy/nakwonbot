@@ -326,6 +326,7 @@ class MyClient(discord.Client):
                     stock_random()
                     did = i + 1
                     print(f"{count}중 {did}만큼 돌렸습니다.")
+            await message.channel.send("Complete!")
 
         if message.content == "!세율":
             await message.channel.send(
