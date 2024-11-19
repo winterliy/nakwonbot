@@ -10,6 +10,7 @@ from http import client
 import discord
 # import sys
 # from discord.sinks import WaveSink
+import matplotlib.pyplot as plt
 
 now = datetime.now()
 today = now.date()
@@ -40,6 +41,7 @@ FILES = {
 ACCOUNT_FILE = 'economics/account.json'
 STOCK_FILE = 'economics/stock.json'
 TAX_PERSON_FILE = "economics/tax_person.json"
+HISTORY_FILE = "economics/history.json"
 
 # 폴더 및 파일 생성
 if not os.path.exists(FOLDER):
@@ -211,6 +213,60 @@ class MyClient(discord.Client):
             return None
 
         content = message.content.strip()
+
+        if message.content.startswith("!주식그래프"):
+            args = message.content.split()
+
+            if len(args) != 3:
+                await message.channel.send("올바른 사용법: `!주식그래프 <거래소> <주식코드>`")
+                return
+
+            exchange = args[1]
+            stock_name = args[2]
+
+            try:
+                # history.json 데이터 읽기
+                with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                    history_data = json.load(f)
+
+                # 필터링된 데이터 가져오기
+                filtered_data = [
+                    item for item in history_data
+                    if item["exchange"] == exchange and item["name"] == stock_name
+                ]
+
+                if not filtered_data:
+                    await message.channel.send("해당 거래소와 주식코드에 대한 데이터가 없습니다.")
+                    return
+
+                # 시간과 가격 추출
+                from datetime import datetime
+                times = [
+                    datetime.strptime(item["time"], "%Y-%m-%d %H:%M:%S") for item in filtered_data
+                ]
+                prices = [item["price"] for item in filtered_data]
+
+                # 그래프 생성
+                plt.figure(figsize=(10, 5))
+                plt.plot(times, prices, marker="o", color="blue", linestyle="-")
+                plt.title(f"{exchange} - {stock_name} 주가 그래프")
+                plt.xlabel("시간")
+                plt.ylabel("가격 (원)")
+                plt.grid(True)
+
+                # 그래프 이미지 저장
+                graph_path = "stock_graph.png"
+                plt.savefig(graph_path)
+                plt.close()
+
+                # Discord에 그래프 전송
+                await message.channel.send(file=discord.File(graph_path))
+
+                # 생성된 파일 삭제
+                os.remove(graph_path)
+
+            except Exception as e:
+                await message.channel.send(f"오류가 발생했습니다: {e}")
 
         if message.content.startswith("$세율설정"):
             args = message.content.split()
