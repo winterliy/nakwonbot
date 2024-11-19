@@ -1144,7 +1144,7 @@ class MyClient(discord.Client):
 
             stock_info = stock_data[stock_code]
             embed = discord.Embed(title=f"📄 주식 정보: {stock_info['name']} ({stock_code})", color=0x0000FF)
-            embed.add_field(name="거래소", value=stock_info["exchange"], inline=False)
+            embed.add_field(name="거래소", value=f"{stock_info['nation']}의 {stock_info['exchange']}", inline=False)
             embed.add_field(name="가격", value=f"{stock_info['price']}원", inline=False)
             embed.add_field(name="발행 주식 수", value=f"{stock_info['total_shares']}주", inline=False)
             embed.add_field(name="거래 가능 주식 수", value=f"{stock_info['tradable_shares']}주", inline=False)
@@ -1317,15 +1317,16 @@ class MyClient(discord.Client):
         if message.content.startswith("$stock publish"):
             args = message.content.split()
             if len(args) != 8:
-                await message.channel.send("올바른 형식: `$stock publish <주식명> <거래소> <카테고리> <주당 가격> <발행 주식 수> <거래 가능한 비율>`")
+                await message.channel.send("올바른 형식: `$stock publish <주식명> <국가> <거래소> <카테고리> <주당 가격> <발행 주식 수> <거래 가능한 비율>`")
                 return
 
             stock_name = args[2]
-            exchange = args[3]
-            category = args[4]
-            price = int(args[5])
-            total_shares = int(args[6])
-            tradable_ratio = float(args[7])
+            nation = args[3]
+            exchange = args[4]
+            category = args[5]
+            price = int(args[6])
+            total_shares = int(args[7])
+            tradable_ratio = float(args[8])
 
             stock_path = os.path.join(FOLDER, "stock.json")
 
@@ -1336,6 +1337,7 @@ class MyClient(discord.Client):
 
             stock_data[new_stock_code] = {
                 "name": stock_name,
+                "nation": nation,
                 "exchange": exchange,
                 "category": category,
                 "price": price,
@@ -1729,13 +1731,14 @@ class MyClient(discord.Client):
                 for stock_key, stock_info in stock_data.items():
                     stock_name = stock_info.get("name", "이름 없음")  # 주식명
                     stock_price = stock_info.get("price", 0)  # 주식 가격
+                    stock_nation = stock_info.get("nation", "소속 없음")
                     stock_exchange = stock_info.get("exchange", "거래소 없음")  # 거래소
 
                     # 각 주식 정보를 임베드에 추가
                     embed.add_field(
-                        name=f"{stock_name} ({stock_key})",
-                        value=f"거래소: {stock_exchange}\n현재 가격: {stock_price}원",
-                        inline=False
+                        name=f"<:nakwon:1308403349829320754> {stock_name} ({stock_nation}의 {stock_exchange}:{stock_key})",
+                        value=f"현재 가격: {stock_price}원",
+                        inline=True
                     )
 
                 await message.channel.send(embed=embed)
