@@ -81,7 +81,7 @@ compatibilities = [
 탈세벌금 = 0.8
 주식탈세벌금 = 0.8
 주식최소금액 = 100
-주식확률 = 0.65
+주식확률 = 0.5
 
 def stock_random():
     import random
@@ -257,6 +257,17 @@ class MyClient(discord.Client):
 
             except ValueError:
                 await message.channel.send("값은 숫자여야 합니다.")
+
+        if message.content.startswith("forge"):
+            args = message.content.split()
+            count = args[1]
+            if len(args) != 2:
+                await message.channel.send("형식이 바르지 않습니다.")
+            else:
+                for i in range(int(count)):
+                    stock_random()
+                    did = i + 1
+                    print(f"{count}중 {did}만큼 돌렸습니다.")
 
         if message.content == "!세율":
             await message.channel.send(
