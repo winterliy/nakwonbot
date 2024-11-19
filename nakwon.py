@@ -215,6 +215,8 @@ class MyClient(discord.Client):
         content = message.content.strip()
 
         if message.content.startswith("!주식그래프"):
+            stock_random()
+            int_changer()
             args = message.content.split()
 
             if len(args) != 3:
