@@ -196,14 +196,85 @@ class MyClient(discord.Client):
 
     async def on_message(self, message, random=None):
         global 주식확률  # 전역 변수 선언
+        global 근로소득세
+        global 복권세금
+        global 도박세금
+        global 매수세금
+        global 매도세금
+        global 이체세금
+        global 납세율
+        global 탈세벌금
+        global 주식탈세벌금
+        global 주식최소금액
 
         if message.author.bot:
             return None
 
         content = message.content.strip()
 
+        if message.content.startswith("$세율설정"):
+            args = message.content.split()
+            if len(args) != 3:
+                await message.channel.send(
+                    "올바른 형식: `$세율설정 <세금 이름> <값>`\n"
+                    "설정 가능한 세금: 근로소득세, 복권세금, 도박세금, 매수세금, 매도세금, "
+                    "이체세금, 납세율, 탈세벌금, 주식탈세벌금, 주식최소금액"
+                )
+                return
+
+            tax_name = args[1]
+            try:
+                value = float(args[2])
+                if value < 0:
+                    await message.channel.send("세금 값은 0 이상의 값이어야 합니다.")
+                    return
+
+                if tax_name == "근로소득세":
+                    근로소득세 = value
+                elif tax_name == "복권세금":
+                    복권세금 = value
+                elif tax_name == "도박세금":
+                    도박세금 = value
+                elif tax_name == "매수세금":
+                    매수세금 = value
+                elif tax_name == "매도세금":
+                    매도세금 = value
+                elif tax_name == "이체세금":
+                    이체세금 = value
+                elif tax_name == "납세율":
+                    납세율 = value
+                elif tax_name == "탈세벌금":
+                    탈세벌금 = value
+                elif tax_name == "주식탈세벌금":
+                    주식탈세벌금 = value
+                elif tax_name == "주식최소금액":
+                    주식최소금액 = value
+                else:
+                    await message.channel.send("올바른 세금 이름을 입력하세요.")
+                    return
+
+                await message.channel.send(f"{tax_name}이(가) {value}로 설정되었습니다.")
+
+            except ValueError:
+                await message.channel.send("값은 숫자여야 합니다.")
+
+        if message.content == "!세율":
+            await message.channel.send(
+                f"**현재 세금 설정:**\n"
+                f"근로소득세: {근로소득세}\n"
+                f"복권세금: {복권세금}\n"
+                f"도박세금: {도박세금}\n"
+                f"매수세금: {매수세금}\n"
+                f"매도세금: {매도세금}\n"
+                f"이체세금: {이체세금}\n"
+                f"납세율: {납세율}\n"
+                f"탈세벌금: {탈세벌금}\n"
+                f"주식탈세벌금: {주식탈세벌금}\n"
+                f"주식최소금액: {주식최소금액}"
+            )
+
         # '!set_probability <값>' 명령어 처리
-        if message.content.startswith("$set_stock_probability"):
+        if message.content.startswith("주식등락률설정"):
             try:
                 args = message.content.split()
                 if len(args) != 2:
@@ -220,7 +291,7 @@ class MyClient(discord.Client):
                 await message.channel.send("확률 값은 숫자여야 합니다.")
 
         # '!get_probability' 명령어 처리
-        if message.content == "$show_stock_probability":
+        if message.content == "$주식등락률보기":
             await message.channel.send(f"현재 주식 확률은 {주식확률}입니다.")
 
         if message.content.startswith("!계좌개설"):
@@ -1733,6 +1804,7 @@ class MyClient(discord.Client):
             embed.add_field(name="!궁합 <유저1> <유저2>", value="궁합을 볼 수 있습니다. 유저 간의 궁합을 시험해보세요.", inline=False)
             embed.add_field(name="!로또참여", value="10만원을 내고 로또에 참가할 수 있습니다. 당신의 운을 시험해보세요.", inline=False)
             embed.add_field(name="!랭킹", value="총 자산의 순위을 볼 수 있습니다. 유저들의 자산을 확인해보세요.", inline=False)
+            embed.add_field(name="!세율", value="세율을 볼 수 있습니다. 현행 세율을 확인해보세요.", inline=False)
             embed.add_field(name=f"!기부 <금액>", value="기부할 수 있습니다. 기부금은 교육, 의료, 식량, 의류, 주거, 봉사자나 재능기부자의 \n활동비나 실비 지원, 환경, 사회복지, 문화예술, 지방지역사회 활성화 등을 위해 사용됩니다.", inline=False)
 
             await message.channel.send(embed=embed)

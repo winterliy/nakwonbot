@@ -30,9 +30,6 @@
 - !일급 : 하루에 한 번 5만원 지급, daily_reward.json에 저장하기.
 - ~~!월급 :~~
 - !지갑 : 본인의 account.json를 출력. 임베드에 출력.
-    - !납세 : 세금을 내는 명령어. 하루에 한 번 작동. account.json에서 현금의 3%와 보유한 주식의 20%를  lotto.json에 저장. 납세한 유저는 tax.json에 저장.ㅇ
-- $tax : 세금에 대한 설정 명령어. $tax 인자 형식으로 씀. (ex. $tax check)
-    - check : 계좌에 10만원 이상이 있는 사람 중에 tax.json에 없는 사람의 account.json에서 현금 50%와 주식의 80%를 빼서 lotto.json에 저장. 후에 tax.json을 비운다
 
 4. 주식 시스템
 - !매도 <거래소> <주식코드> <주> : 주만큼 주식을 매도
@@ -69,8 +66,13 @@
 - $lotto : 로또에 대한 설정 명령어. $lotto 인자 형식으로 씀. (ex. $lotto start)
   - start : lotto.json에 있는 돈과 주식을 lotto_player.json에 있는 유저 중 한 명을 선출하여 랜덤하게 지급. 지급 후에는 lotto_player.json을 비운다
 - !로또체크 : 복권기금 잔고 체크
-    
 
+8. 세금시스템
+- !납세 : 세금을 내는 명령어. 하루에 한 번 작동. account.json에서 현금의 3%와 보유한 주식의 20%를  lotto.json에 저장. 납세한 유저는 tax.json에 저장.ㅇ
+- $tax : 세금에 대한 설정 명령어. $tax 인자 형식으로 씀. (ex. $tax check)
+    - check : 계좌에 10만원 이상이 있는 사람 중에 tax.json에 없는 사람의 account.json에서 현금 50%와 주식의 80%를 빼서 lotto.json에 저장. 후에 tax.json을 비운다
+- !세율 : 현행 세율을 확인할 수 있습니다
+- $세율설정 <세금명> <세율> : 세율을 정할 수 있습니다
 
 Powerd by NAKWON
 (C) 2024. NAKWON INC. All rights reserved.
