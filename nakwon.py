@@ -195,10 +195,33 @@ class MyClient(discord.Client):
         await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="우리소리골"))
 
     async def on_message(self, message, random=None):
+        global 주식확률  # 전역 변수 선언
+
         if message.author.bot:
             return None
 
         content = message.content.strip()
+
+        # '!set_probability <값>' 명령어 처리
+        if message.content.startswith("$set_stock_probability"):
+            try:
+                args = message.content.split()
+                if len(args) != 2:
+                    await message.channel.send("올바른 형식: `!set_probability <0~1 사이 값>`")
+                    return
+
+                value = float(args[1])
+                if 0 <= value <= 1:
+                    주식확률 = value
+                    await message.channel.send(f"주식 확률이 {주식확률}로 설정되었습니다.")
+                else:
+                    await message.channel.send("확률 값은 0과 1 사이의 소수여야 합니다.")
+            except ValueError:
+                await message.channel.send("확률 값은 숫자여야 합니다.")
+
+        # '!get_probability' 명령어 처리
+        if message.content == "$show_stock_probability":
+            await message.channel.send(f"현재 주식 확률은 {주식확률}입니다.")
 
         if message.content.startswith("!계좌개설"):
             user_id = str(message.author.id)
@@ -364,6 +387,54 @@ class MyClient(discord.Client):
                             json.dump(tax_person_data, f, ensure_ascii=False, indent=4)
 
                         await message.channel.send(f"납세가 완료되었습니다. {tax_amount} 원이 차감되었습니다.")
+
+        if message.content.startswith("!기부"):
+            args = message.content.split()
+            if len(args) != 2 or not args[1].isdigit():
+                await message.channel.send("올바른 형식: `!기부 <금액>`")
+                return
+
+            donation_amount = int(args[1])
+            user_id = str(message.author.id)
+            account_path = os.path.join(FOLDER, "account.json")
+            lotto_path = os.path.join(FOLDER, "lotto.json")
+
+            try:
+                # account.json 파일 읽기
+                with open(account_path, "r+", encoding="utf-8") as f:
+                    account_data = json.load(f)
+
+                    # 계좌 확인
+                    if user_id not in account_data:
+                        await message.channel.send("계좌를 먼저 개설해주세요.")
+                        return
+
+                    # 보유 금액 확인
+                    if account_data[user_id]["cash"] < donation_amount:
+                        await message.channel.send("보유 현금이 부족합니다.")
+                        return
+
+                    # 금액 차감
+                    account_data[user_id]["cash"] -= donation_amount
+                    f.seek(0)
+                    json.dump(account_data, f, indent=4, ensure_ascii=False)
+                    f.truncate()
+
+                # lotto.json 파일 읽기 및 업데이트
+                with open(lotto_path, "r+", encoding="utf-8") as f:
+                    lotto_data = json.load(f)
+
+                    # 기부금 추가
+                    lotto_data["cash"] += donation_amount
+                    f.seek(0)
+                    json.dump(lotto_data, f, indent=4, ensure_ascii=False)
+                    f.truncate()
+
+                # 완료 메시지
+                await message.channel.send(f"{donation_amount}원이 성공적으로 기부되었습니다!")
+
+            except Exception as e:
+                await message.channel.send(f"기부 처리 중 오류가 발생했습니다: {e}")
 
         if message.content.startswith("!로또참여"):
             user_id = str(message.author.id)
@@ -1522,6 +1593,36 @@ class MyClient(discord.Client):
 
                 await message.channel.send(f"도박의 보상 배율이 {value}로 설정되었습니다.")
 
+        if message.content == "!로또체크":
+            lotto_path = os.path.join(FOLDER, "lotto.json")
+            stock_path = os.path.join(FOLDER, "stock.json")
+
+            try:
+                # lotto.json 파일 읽기
+                with open(lotto_path, "r", encoding="utf-8") as f:
+                    lotto_data = json.load(f)
+
+                # 현금 추출
+                total_value = lotto_data["cash"]
+
+                # 주식 가격 계산
+                with open(stock_path, "r", encoding="utf-8") as f:
+                    stock_data = json.load(f)
+
+                # stocks 필드가 딕셔너리이므로, 주식 코드와 수량을 확인하여 가치 계산
+                for stock_code, stock_quantity in lotto_data["stocks"].items():
+                    # 주식 코드로 stock.json에서 현재 주식 가격 조회
+                    current_price = stock_data.get(stock_code, {}).get("price", 0)
+
+                    # 주식의 총 가치를 계산하여 더함
+                    total_value += current_price * stock_quantity
+
+                # 결과 출력
+                await message.channel.send(f"현재 로또 기금의 총 가치는 {total_value}원입니다.")
+
+            except Exception as e:
+                await message.channel.send(f"로또 기금 체크 중 오류가 발생했습니다: {e}")
+
         if message.content == "!주식목록":
             stock_random()
             int_changer()
@@ -1628,6 +1729,7 @@ class MyClient(discord.Client):
             embed.add_field(name="!궁합 <유저1> <유저2>", value="궁합을 볼 수 있습니다. 유저 간의 궁합을 시험해보세요.", inline=False)
             embed.add_field(name="!로또참여", value="10만원을 내고 로또에 참가할 수 있습니다. 당신의 운을 시험해보세요.", inline=False)
             embed.add_field(name="!랭킹", value="총 자산의 순위을 볼 수 있습니다. 유저들의 자산을 확인해보세요.", inline=False)
+            embed.add_field(name=f"!기부 <금액>", value="기부할 수 있습니다. 기부금은 교육, 의료, 식량, 의류, 주거, 봉사자나 재능기부자의 \n활동비나 실비 지원, 환경, 사회복지, 문화예술, 지방지역사회 활성화 등을 위해 사용됩니다.", inline=False)
 
             await message.channel.send(embed=embed)
 
