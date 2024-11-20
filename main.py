@@ -91,6 +91,25 @@ compatibilities = [
 재벌증세율 = 0.5
 재벌증세율기준 = 100000000000
 
+def price_fix(exchange, stock, price):
+    price = int(price)
+
+    stock_path = os.path.join(FOLDER, "stock.json")
+
+    with open(stock_path, "r", encoding="utf-8") as f:
+        stock_data = json.load(f)
+
+    if stock not in stock_data or stock_data[stock]["exchange"] != exchange:
+        print("해당 주식이 존재하지 않습니다.")
+        return
+
+    stock_data[stock]["price"] = price
+
+    with open(stock_path, "w", encoding="utf-8") as f:
+        json.dump(stock_data, f, ensure_ascii=False, indent=4)
+
+    print(f"{stock}의 주식 가격이 {price}로 설정되었습니다.")
+
 def stock_random():
     import random
     from datetime import datetime
@@ -224,6 +243,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith("!주식그래프"):
             stock_random()
+            price_fix("DEX", "000009", 1)
             
             args = message.content.split()
 
@@ -1087,7 +1107,6 @@ class MyClient(discord.Client):
 
             await message.channel.send(f"{quantity}개의 {stock_code} 주식을 매수했습니다. 잔액: {account_data[user_id]['cash']} 원")
             stock_random()
-            
 
         # !매도 명령어 처리
         elif message.content.startswith("!매도"):
@@ -1194,6 +1213,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith("!주식기록"):
             stock_random()
+            price_fix("DEX", "000009", 1)
             
             history_path = os.path.join(FOLDER, "history.json")
             args = message.content.split()
@@ -1236,6 +1256,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith("!주식정보"):
             stock_random()
+            price_fix("DEX", "000009", 1)
             
             args = message.content.split()
             if len(args) != 3:
@@ -1263,6 +1284,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith("!주식기록"):
             stock_random()
+            price_fix("DEX", "000009", 1)
             
             args = message.content.split()
             if len(args) != 3:
@@ -1554,25 +1576,25 @@ class MyClient(discord.Client):
                 await message.channel.send("올바른 형식: `$stock set <거래소> <주식코드> <새로운 가격>`")
                 return
 
-            exchange = args[2]
-            stock_code = args[3]
-            new_price = int(args[4])
+                exchange = args[2]
+                stock_code = args[3]
+                new_price = int(args[4])
 
-            stock_path = os.path.join(FOLDER, "stock.json")
+                stock_path = os.path.join(FOLDER, "stock.json")
 
-            with open(stock_path, "r", encoding="utf-8") as f:
-                stock_data = json.load(f)
+                with open(stock_path, "r", encoding="utf-8") as f:
+                    stock_data = json.load(f)
 
-            if stock_code not in stock_data or stock_data[stock_code]["exchange"] != exchange:
-                await message.channel.send("해당 주식이 존재하지 않습니다.")
-                return
+                if stock_code not in stock_data or stock_data[stock_code]["exchange"] != exchange:
+                    await message.channel.send("해당 주식이 존재하지 않습니다.")
+                    return
 
-            stock_data[stock_code]["price"] = new_price
+                stock_data[stock_code]["price"] = new_price
 
-            with open(stock_path, "w", encoding="utf-8") as f:
-                json.dump(stock_data, f, ensure_ascii=False, indent=4)
+                with open(stock_path, "w", encoding="utf-8") as f:
+                    json.dump(stock_data, f, ensure_ascii=False, indent=4)
 
-            await message.channel.send(f"{stock_code}의 주식 가격이 {new_price}로 설정되었습니다.")
+                await message.channel.send(f"{stock_code}의 주식 가격이 {new_price}로 설정되었습니다.")
 
         if message.content.startswith("$stock split"):
             args = message.content.split()
@@ -1823,6 +1845,7 @@ class MyClient(discord.Client):
 
         if message.content == "!주식목록":
             stock_random()
+            price_fix("DEX", "000009", 1)
             
             stock_path = os.path.join(FOLDER, "stock.json")
 
