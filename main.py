@@ -84,6 +84,8 @@ compatibilities = [
 주식탈세벌금 = 0.8
 주식최소금액 = 100
 주식확률 = 0.5
+재벌증세율 = 0.5
+재벌증세율기준 = 100000000000
 
 def stock_random():
     import random
@@ -208,6 +210,8 @@ class MyClient(discord.Client):
         global 탈세벌금
         global 주식탈세벌금
         global 주식최소금액
+        global 재벌증세율
+        global 재벌증세율기준
 
         if message.author.bot:
             return None
@@ -276,7 +280,7 @@ class MyClient(discord.Client):
                 await message.channel.send(
                     "올바른 형식: `$세율설정 <세금 이름> <값>`\n"
                     "설정 가능한 세금: 근로소득세, 복권세금, 도박세금, 매수세금, 매도세금, "
-                    "이체세금, 납세율, 탈세벌금, 주식탈세벌금, 주식최소금액"
+                    "이체세금, 납세율, 탈세벌금, 주식탈세벌금, 주식최소금액, 재벌증세율"
                 )
                 return
 
@@ -307,6 +311,10 @@ class MyClient(discord.Client):
                     주식탈세벌금 = value
                 elif tax_name == "주식최소금액":
                     주식최소금액 = value
+                elif tax_name == "재벌증세율":
+                    재벌증세율 = value
+                elif tax_name == "재벌증세율기준":
+                    재벌증세율기준 == value
                 else:
                     await message.channel.send("올바른 세금 이름을 입력하세요.")
                     return
@@ -340,7 +348,9 @@ class MyClient(discord.Client):
                 f"납세율: {납세율}\n"
                 f"탈세벌금: {탈세벌금}\n"
                 f"주식탈세벌금: {주식탈세벌금}\n"
-                f"주식최소금액: {주식최소금액}"
+                f"주식최소금액: {주식최소금액}\n"
+                f"재벌증세율: {재벌증세율}\n"
+                f"재벌증세율기준: {재벌증세율기준}"
             )
 
         # '!set_probability <값>' 명령어 처리
@@ -496,38 +506,74 @@ class MyClient(discord.Client):
                     if cash_balance < tax_amount:
                         await message.channel.send("납세를 위한 현금이 부족합니다.")
                     else:
-                        # 현금 차감
-                        user_account["cash"] -= tax_amount
+                        hundred_million_tax_amount = cash_balance * 재벌증세율
 
-                        # 로또 기금에 세금 금액 추가
-                        lotto_path = os.path.join(FOLDER, "lotto.json")
-                        if not os.path.exists(lotto_path):
-                            # 로또 파일이 없으면 기본값을 설정하여 생성
-                            lotto_data = {"cash": 0, "stocks": {}}
-                        else:
-                            try:
-                                with open(lotto_path, "r", encoding="utf-8") as f:
-                                    lotto_data = json.load(f)
-                            except json.JSONDecodeError:
-                                # JSON 오류가 발생하면 기본값으로 초기화
+                        if cash_balance >= 재벌증세율기준:
+                            user_account["cash"] -= hundred_million_tax_amount
+
+                            # 로또 기금에 세금 금액 추가
+                            lotto_path = os.path.join(FOLDER, "lotto.json")
+                            if not os.path.exists(lotto_path):
+                                # 로또 파일이 없으면 기본값을 설정하여 생성
                                 lotto_data = {"cash": 0, "stocks": {}}
+                            else:
+                                try:
+                                    with open(lotto_path, "r", encoding="utf-8") as f:
+                                        lotto_data = json.load(f)
+                                except json.JSONDecodeError:
+                                    # JSON 오류가 발생하면 기본값으로 초기화
+                                    lotto_data = {"cash": 0, "stocks": {}}
 
-                        lotto_data["cash"] += tax_amount  # 세금 금액을 로또 기금에 추가
+                            lotto_data["cash"] += hundred_million_tax_amount  # 세금 금액을 로또 기금에 추가
 
-                        # 로또 파일에 업데이트된 데이터 저장
-                        with open(lotto_path, "w", encoding="utf-8") as f:
-                            json.dump(lotto_data, f, indent=4, ensure_ascii=False)
+                            # 로또 파일에 업데이트된 데이터 저장
+                            with open(lotto_path, "w", encoding="utf-8") as f:
+                                json.dump(lotto_data, f, indent=4, ensure_ascii=False)
 
-                        # 계좌 정보 업데이트: 차감된 현금 저장
-                        with open(account_path, "w", encoding="utf-8") as f:
-                            json.dump(account_data, f, ensure_ascii=False, indent=4)
+                            # 계좌 정보 업데이트: 차감된 현금 저장
+                            with open(account_path, "w", encoding="utf-8") as f:
+                                json.dump(account_data, f, ensure_ascii=False, indent=4)
 
-                        # 납세 기록 추가
-                        tax_person_data[user_id] = today_date
-                        with open(TAX_PERSON_FILE, 'w', encoding="utf-8") as f:
-                            json.dump(tax_person_data, f, ensure_ascii=False, indent=4)
+                            # 납세 기록 추가
+                            tax_person_data[user_id] = today_date
+                            with open(TAX_PERSON_FILE, 'w', encoding="utf-8") as f:
+                                json.dump(tax_person_data, f, ensure_ascii=False, indent=4)
 
-                        await message.channel.send(f"납세가 완료되었습니다. {tax_amount} 원이 차감되었습니다.")
+                            await message.channel.send(f"납세가 완료되었습니다. {hundred_million_tax_amount} 원이 차감되었습니다.")
+
+                        else:
+                            # 현금 차감
+                            user_account["cash"] -= tax_amount
+
+                            # 로또 기금에 세금 금액 추가
+                            lotto_path = os.path.join(FOLDER, "lotto.json")
+                            if not os.path.exists(lotto_path):
+                                # 로또 파일이 없으면 기본값을 설정하여 생성
+                                lotto_data = {"cash": 0, "stocks": {}}
+                            else:
+                                try:
+                                    with open(lotto_path, "r", encoding="utf-8") as f:
+                                        lotto_data = json.load(f)
+                                except json.JSONDecodeError:
+                                    # JSON 오류가 발생하면 기본값으로 초기화
+                                    lotto_data = {"cash": 0, "stocks": {}}
+
+                            lotto_data["cash"] += tax_amount  # 세금 금액을 로또 기금에 추가
+
+                            # 로또 파일에 업데이트된 데이터 저장
+                            with open(lotto_path, "w", encoding="utf-8") as f:
+                                json.dump(lotto_data, f, indent=4, ensure_ascii=False)
+
+                            # 계좌 정보 업데이트: 차감된 현금 저장
+                            with open(account_path, "w", encoding="utf-8") as f:
+                                json.dump(account_data, f, ensure_ascii=False, indent=4)
+
+                            # 납세 기록 추가
+                            tax_person_data[user_id] = today_date
+                            with open(TAX_PERSON_FILE, 'w', encoding="utf-8") as f:
+                                json.dump(tax_person_data, f, ensure_ascii=False, indent=4)
+
+                            await message.channel.send(f"납세가 완료되었습니다. {tax_amount} 원이 차감되었습니다.")
 
         if message.content.startswith("!기부"):
             args = message.content.split()
