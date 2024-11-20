@@ -1344,7 +1344,7 @@ class MyClient(discord.Client):
             # tax_person.json 파일 초기화
             try:
                 with open(tax_person_path, "w", encoding="utf-8") as f:
-                    json.dump([], f, ensure_ascii=False, indent=4)
+                    json.dump({}, f, ensure_ascii=False, indent=4)
                 await message.channel.send("tax person 기록이 초기화되었습니다!")
             except Exception as e:
                 await message.channel.send(f"초기화에 실패했습니다: {e}")
