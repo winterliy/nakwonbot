@@ -11,6 +11,10 @@ import discord
 # import sys
 # from discord.sinks import WaveSink
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+font_path = '/Users/sinjaehyeon/Library/Fonts/helvetica-light-587ebe5a59211.ttf'
+font_name = fm.FontProperties(fname=font_path).get_name()
 
 now = datetime.now()
 today = now.date()
@@ -253,6 +257,7 @@ class MyClient(discord.Client):
                 prices = [item["price"] for item in filtered_data]
 
                 # 그래프 생성
+                plt.rc('font', family=font_name)
                 plt.figure(figsize=(10, 5))
                 plt.plot(times, prices, marker="o", color="blue", linestyle="-")
                 plt.title(f"{exchange} - {stock_name} 주가 그래프")
