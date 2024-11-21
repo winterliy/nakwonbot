@@ -90,6 +90,7 @@ compatibilities = [
 주식확률 = 0.5
 재벌증세율 = 0.5
 재벌증세율기준 = 100000000000
+reward = 150000
 
 def price_fix(exchange, stock, price):
     price = int(price)
@@ -235,6 +236,7 @@ class MyClient(discord.Client):
         global 주식최소금액
         global 재벌증세율
         global 재벌증세율기준
+        global reward
 
         if message.author.bot:
             return None
@@ -349,6 +351,17 @@ class MyClient(discord.Client):
             except ValueError:
                 await message.channel.send("값은 숫자여야 합니다.")
 
+        if message.content.startswith("$일급설정"):
+            args = message.content.split()
+            if len(args) != 2:
+                await message.channel.send(
+                    "올바른 형식: `일급설정 <값>`"
+                )
+                return
+
+            reward = args[1]
+            await message.channel.send(f"{tax_name}이(가) {value}로 설정되었습니다.")
+
         if message.content.startswith("forge"):
             args = message.content.split()
             count = args[1]
@@ -360,6 +373,11 @@ class MyClient(discord.Client):
                     did = i + 1
                     print(f"{count}중 {did}만큼 돌렸습니다.")
             await message.channel.send("Complete!")
+
+        if message.content.startswith("!일당정기소득보기"):
+            await message.channel.send(
+                f"**현재 일급 설정:** {reward}"
+            )
 
         if message.content == "!세율":
             await message.channel.send(
@@ -416,7 +434,6 @@ class MyClient(discord.Client):
 
         if message.content.startswith("!일급"):
             user_id = str(message.author.id)
-            reward = 50000
             daily_path = os.path.join(FOLDER, "daily_reward.json")
             account_path = os.path.join(FOLDER, "account.json")
 
@@ -1954,6 +1971,7 @@ class MyClient(discord.Client):
             embed.add_field(name="!세율", value="세율을 볼 수 있습니다. 현행 세율을 확인해보세요.", inline=False)
             embed.add_field(name="!주식그래프 <거래소> <주식코드>", value="주가의 변화를 그래프로 볼 수 있습니다. 주가의 변동을 확인하여 투자 해보세요.", inline=False)
             embed.add_field(name=f"!기부 <금액>", value="기부할 수 있습니다. 기부금은 교육, 의료, 식량, 의류, 주거, 봉사자나 재능기부자의 \n활동비나 실비 지원, 환경, 사회복지, 문화예술, 지방지역사회 활성화 등을 위해 사용됩니다.", inline=False)
+            embed.add_field(name="!일당정기소득보기", value="나의 일급을 볼 수 있습니다. 소득에 맞춰 소비수준을 계획해보세요.", inline=False)
 
             await message.channel.send(embed=embed)
 
