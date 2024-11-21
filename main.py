@@ -2073,4 +2073,4 @@ class MyClient(discord.Client):
 intents = discord.Intents.default()
 intents.message_content = True
 client = MyClient(intents=intents)
-client.run('MTMwNDgwNzE0MTYyMTYzMzAzNA.GdUT8R.8WbWmdYoOyQ_Zczcb1LtDHcrNG3nott8739kpQ')
+client.run('MTMwNDgwNzE0MTYyMTYzMzAzNA.GzxET_.Qgg84VYU0EGHX6Rnobh0jUY65ObIjNIacbabZw')
