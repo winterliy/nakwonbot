@@ -246,7 +246,7 @@ class MyClient(discord.Client):
         if message.content.startswith("!주식그래프"):
             stock_random()
             price_fix("DEX", "000009", 1)
-            
+
             args = message.content.split()
 
             if len(args) != 3:
@@ -281,7 +281,14 @@ class MyClient(discord.Client):
                 # 그래프 생성
                 plt.rc('font', family=font_name)
                 plt.figure(figsize=(10, 5))
-                plt.plot(times, prices, marker="o", color="blue", linestyle="-")
+
+                # 상승/하락에 따른 색상 변화
+                for i in range(1, len(times)):
+                    if prices[i] > prices[i - 1]:
+                        plt.plot(times[i - 1:i + 1], prices[i - 1:i + 1], color="red", linestyle="-")  # 상승 빨간색
+                    else:
+                        plt.plot(times[i - 1:i + 1], prices[i - 1:i + 1], color="blue", linestyle="-")  # 하락 파란색
+
                 plt.title(f"{exchange} - {stock_name} 주가 그래프")
                 plt.xlabel("시간")
                 plt.ylabel("가격 (원)")
