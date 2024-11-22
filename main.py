@@ -245,7 +245,6 @@ class MyClient(discord.Client):
 
         if message.content.startswith("!주식그래프"):
             stock_random()
-            price_fix("DEX", "000009", 1)
 
             args = message.content.split()
 
@@ -433,7 +432,7 @@ class MyClient(discord.Client):
                 if user_id in data:
                     await message.channel.send("이미 계좌가 존재합니다.")
                     return
-                data[user_id] = {"cash": 0, "stocks": {}}
+                data[user_id] = {"cash": 2100000, "stocks": {}}
                 f.seek(0)
                 json.dump(data, f, indent=4, ensure_ascii=False)
 
@@ -1237,8 +1236,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith("!주식기록"):
             stock_random()
-            price_fix("DEX", "000009", 1)
-            
+
             history_path = os.path.join(FOLDER, "history.json")
             args = message.content.split()
 
@@ -1280,8 +1278,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith("!주식정보"):
             stock_random()
-            price_fix("DEX", "000009", 1)
-            
+
             args = message.content.split()
             if len(args) != 3:
                 await message.channel.send("올바른 형식: `!주식정보 <거래소> <주식코드>`")
@@ -1308,8 +1305,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith("!주식기록"):
             stock_random()
-            price_fix("DEX", "000009", 1)
-            
+
             args = message.content.split()
             if len(args) != 3:
                 await message.channel.send("올바른 형식: `!주식기록 <거래소> <주식코드>`")
@@ -1472,7 +1468,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith("$stock publish"):
             args = message.content.split()
-            if len(args) != 8:
+            if len(args) != 9:
                 await message.channel.send("올바른 형식: `$stock publish <주식명> <국가> <거래소> <카테고리> <주당 가격> <발행 주식 수> <거래 가능한 비율>`")
                 return
 
@@ -1600,25 +1596,25 @@ class MyClient(discord.Client):
                 await message.channel.send("올바른 형식: `$stock set <거래소> <주식코드> <새로운 가격>`")
                 return
 
-                exchange = args[2]
-                stock_code = args[3]
-                new_price = int(args[4])
+            exchange = args[2]
+            stock_number = args[3]
+            new_price = int(args[4])
 
-                stock_path = os.path.join(FOLDER, "stock.json")
+            stock_path = os.path.join(FOLDER, "stock.json")
 
-                with open(stock_path, "r", encoding="utf-8") as f:
-                    stock_data = json.load(f)
+            with open(stock_path, "r", encoding="utf-8") as f:
+                stock_data = json.load(f)
 
-                if stock_code not in stock_data or stock_data[stock_code]["exchange"] != exchange:
-                    await message.channel.send("해당 주식이 존재하지 않습니다.")
-                    return
+            if stock_number not in stock_data or stock_data[stock_number]["exchange"] != exchange:
+                await message.channel.send("해당 주식이 존재하지 않습니다.")
+                return
 
-                stock_data[stock_code]["price"] = new_price
+            stock_data[stock_number]["price"] = new_price
 
-                with open(stock_path, "w", encoding="utf-8") as f:
-                    json.dump(stock_data, f, ensure_ascii=False, indent=4)
+            with open(stock_path, "w", encoding="utf-8") as f:
+                json.dump(stock_data, f, ensure_ascii=False, indent=4)
 
-                await message.channel.send(f"{stock_code}의 주식 가격이 {new_price}로 설정되었습니다.")
+            await message.channel.send(f"{stock_number}의 주식 가격이 {new_price}로 설정되었습니다.")
 
         if message.content.startswith("$stock split"):
             args = message.content.split()
@@ -1869,8 +1865,7 @@ class MyClient(discord.Client):
 
         if message.content == "!주식목록":
             stock_random()
-            price_fix("DEX", "000009", 1)
-            
+
             stock_path = os.path.join(FOLDER, "stock.json")
 
             try:
@@ -1963,7 +1958,7 @@ class MyClient(discord.Client):
             embed.add_field(name="$nmd <갯수>", value="<갯수>만큼 메시지를 삭제할 수 있습니다.", inline=False)
             embed.add_field(name="!계좌개설", value="계좌를 생성하고 초기 자금을 설정합니다.", inline=False)
             embed.add_field(name="!이체 <플레이어id> <금액>", value="다른 플레이어에게 금액을 송금합니다.", inline=False)
-            embed.add_field(name="!일급", value="하루에 한 번 50,000원을 지급받습니다.", inline=False)
+            embed.add_field(name="!일급", value=f"하루에 한 번 {reward}원을 지급받습니다.", inline=False)
             embed.add_field(name="!주식목록", value="현재 상장된 모든 주식의 정보를 확인합니다.", inline=False)
             embed.add_field(name="!매수 <주식명> <수량>", value="원하는 주식을 지정한 수량만큼 구매합니다.", inline=False)
             embed.add_field(name="!매도 <주식명> <수량>", value="보유 중인 주식을 지정한 수량만큼 판매합니다.", inline=False)
