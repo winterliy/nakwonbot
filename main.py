@@ -2013,7 +2013,8 @@ class MyClient(discord.Client):
         if message.content.startswith('$nmd'):
             try:
                 count = int(message.content.split()[1])
-                deleted = await message.channel.purge(limit=count)
+                clear_count = count + 1
+                deleted = await message.channel.purge(limit=clear_count)
                 await message.channel.send(f"{len(deleted)}개의 메시지가 삭제되었습니다.", delete_after=5)
             except (IndexError, ValueError):
                 await message.channel.send("사용법: $nmd [숫자]", delete_after=5)
