@@ -15,7 +15,7 @@
 | 7.x     | :x:                |
 | 8.x     | :x:                |
 | 9.x     | :x:                |
-| 10.x    | :x:                |
+| 10.x    | :white_check_mark: |
 
 ## Reporting a Vulnerability
 sw2dnesf@gmail.com
