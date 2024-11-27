@@ -244,6 +244,24 @@ class MyClient(discord.Client):
         if message.author.bot:
             return None
 
+        if message.content.startswith("$notice"):
+            msg = input("출력할 말 : ")
+
+            if msg == "":
+                print("빈 칸 입니다. 잠정 기능 중지 처리 되었습니다.")
+            # 봇이 속한 모든 서버의 채팅방 찾기
+            else:
+                for guild in client.guilds:
+                    for channel in guild.text_channels:
+                        try:
+                            # 채팅방에 메시지 보내기
+                            await channel.send(msg)
+                        except discord.Forbidden:
+                            # 채팅방에 메시지를 보낼 권한이 없을 경우
+                            print(f"권한이 없어 {channel.name} 채널에 메시지를 보낼 수 없습니다.")
+                        except Exception as e:
+                            print(f"오류 발생: {e}")
+
         if message.content.startswith("!주식그래프"):
             stock_random()
 
