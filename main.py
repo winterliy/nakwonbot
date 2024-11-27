@@ -244,6 +244,28 @@ class MyClient(discord.Client):
         if message.author.bot:
             return None
 
+        if message.content.startswith("$dmnotice"):
+            args = message.content.split()
+            user_id = args[1]
+            msg = input("출력할 말 : ")
+            if msg == "":
+                print("빈 칸 입니다. 잠정 기능 중지 처리 되었습니다.")
+            else:
+                try:
+                    # 사용자 객체 가져오기
+                    user = await client.fetch_user(user_id)
+
+                    # 사용자에게 DM 보내기
+                    await user.send(msg)
+                    print(f"DM을 {user.name}님에게 성공적으로 보냈습니다.")
+
+                except discord.NotFound:
+                    print("사용자를 찾을 수 없습니다.")
+                except discord.Forbidden:
+                    print("이 사용자는 DM을 받을 수 없습니다.")
+                except Exception as e:
+                    print(f"DM 전송 중 오류 발생: {e}")
+
         if message.content.startswith("$notice"):
             msg = input("출력할 말 : ")
 
@@ -1966,10 +1988,17 @@ class MyClient(discord.Client):
 
         if message.content.startswith(''):
             int_changer()
-            time = message.created_at
-            chatlog = open('chat_log.txt', 'a')
-            chatlog.write(f"{time} 에 {message.guild.name} 에서 {message.author.name} ( {message.author.nick} ) ( {message.author.mention} ) 가 {message.channel.mention} 에서 " + "'"+message.content+"'" + " 라고 말함. \n")
-            chatlog.close()
+            # DM인지 확인
+            if isinstance(message.channel, discord.DMChannel):  # DM 채널에서 메시지가 왔는지 확인
+                time = message.created_at
+                chatlog = open('chat_log.txt', 'a')
+                chatlog.write(f"{time} 에 DM에서 {message.author.name} ( {message.author.mention} ) 가 " + "'" + message.content + "'" + " 라고 말함. \n")
+                chatlog.close()
+            else:
+                time = message.created_at
+                chatlog = open('chat_log.txt', 'a')
+                chatlog.write(f"{time} 에 {message.guild.name} 에서 {message.author.name} ( {message.author.nick} ) ( {message.author.mention} ) 가 {message.channel.mention} 에서 " + "'"+message.content+"'" + " 라고 말함. \n")
+                chatlog.close()
 
         if message.content.startswith('$nmd'):
             try:
