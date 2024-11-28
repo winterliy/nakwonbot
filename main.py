@@ -246,43 +246,56 @@ class MyClient(discord.Client):
 
         if message.content.startswith("$dmnotice"):
             args = message.content.split()
-            user_id = args[1]
-            msg = input("출력할 말 : ")
-            if msg == "":
-                print("빈 칸 입니다. 잠정 기능 중지 처리 되었습니다.")
+            if len(args) < 3:
+                print("올바른 형식이 아닙니다.")
             else:
-                try:
-                    # 사용자 객체 가져오기
-                    user = await client.fetch_user(user_id)
+                user_id = args[2]
+                count =int(args[1])
+                msg = input("출력할 말 : ")
+                if msg == "" or count == 0:
+                    print("빈 칸 입니다. 잠정 기능 중지 처리 되었습니다.")
+                else:
+                    try:
+                        for i in range(count):
+                            # 사용자 객체 가져오기
+                            user = await client.fetch_user(user_id)
 
-                    # 사용자에게 DM 보내기
-                    await user.send(msg)
-                    print(f"DM을 {user.name}님에게 성공적으로 보냈습니다.")
+                            # 사용자에게 DM 보내기
+                            await user.send(msg)
+                            print(f"DM을 {user.name}님에게 성공적으로 보냈습니다.")
 
-                except discord.NotFound:
-                    print("사용자를 찾을 수 없습니다.")
-                except discord.Forbidden:
-                    print("이 사용자는 DM을 받을 수 없습니다.")
-                except Exception as e:
-                    print(f"DM 전송 중 오류 발생: {e}")
+                    except discord.NotFound:
+                        print("사용자를 찾을 수 없습니다.")
+                    except discord.Forbidden:
+                        print("이 사용자는 DM을 받을 수 없습니다.")
+                    except Exception as e:
+                        print(f"DM 전송 중 오류 발생: {e}")
 
         if message.content.startswith("$notice"):
-            msg = input("출력할 말 : ")
+            args = message.content.split()
 
-            if msg == "":
-                print("빈 칸 입니다. 잠정 기능 중지 처리 되었습니다.")
-            # 봇이 속한 모든 서버의 채팅방 찾기
+            if len(args) < 2:
+                print("올바른 형식이 아닙니다.")
+
             else:
-                for guild in client.guilds:
-                    for channel in guild.text_channels:
-                        try:
-                            # 채팅방에 메시지 보내기
-                            await channel.send(msg)
-                        except discord.Forbidden:
-                            # 채팅방에 메시지를 보낼 권한이 없을 경우
-                            print(f"권한이 없어 {channel.name} 채널에 메시지를 보낼 수 없습니다.")
-                        except Exception as e:
-                            print(f"오류 발생: {e}")
+                count = int(args[1])
+                msg = input("출력할 말 : ")
+
+                if msg == "" or count == 0:
+                    print("빈 칸 입니다. 잠정 기능 중지 처리 되었습니다.")
+                # 봇이 속한 모든 서버의 채팅방 찾기
+                else:
+                    for i in range(count):
+                        for guild in client.guilds:
+                            for channel in guild.text_channels:
+                                try:
+                                    # 채팅방에 메시지 보내기
+                                    await channel.send(msg)
+                                except discord.Forbidden:
+                                    # 채팅방에 메시지를 보낼 권한이 없을 경우
+                                    print(f"권한이 없어 {channel.name} 채널에 메시지를 보낼 수 없습니다.")
+                                except Exception as e:
+                                    print(f"오류 발생: {e}")
 
         if message.content.startswith("!주식그래프"):
             stock_random()
@@ -2005,7 +2018,7 @@ class MyClient(discord.Client):
                 count = int(message.content.split()[1])
                 clear_count = count + 1
                 deleted = await message.channel.purge(limit=clear_count)
-                await message.channel.send(f"{len(deleted)}개의 메시지가 삭제되었습니다.", delete_after=5)
+                await message.channel.send(f"{count}개의 메시지가 삭제되었습니다.", delete_after=5)
             except (IndexError, ValueError):
                 await message.channel.send("사용법: $nmd [숫자]", delete_after=5)
             except discord.Forbidden:
