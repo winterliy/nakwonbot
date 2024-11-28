@@ -83,6 +83,8 @@
 - !궁합 <@유저1> <@유저2> : 유저간 궁합을 확인합니다
 - $notice <횃수> : 횃수만큼. 명령어를 치면 input받음. 모든 채팅에 출력.
 - $dmnotice <횃수> <유저id> : 횃수만큼. 명령어를 치면 input받음, 유저에게 dm발송.
+- !내채팅정보 : 유저의 채팅 개수, 레벨 알기.
+- !채팅랭킹 : 모든 사람의 채팅정보 보기.ㄴ
 
 Powerd by NAKWON
 (C) 2024. NAKWON INC. All rights reserved.

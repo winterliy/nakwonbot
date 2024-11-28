@@ -1,4 +1,3 @@
-# import datetime
 import json
 import os
 # from discord.ext import commands
@@ -7,7 +6,6 @@ import os
 # import yt_dlp as youtube_dl
 from datetime import datetime
 from http import client
-
 import bs4
 import discord
 import sys
@@ -16,9 +14,8 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import aiohttp  # 비동기 요청 라이브러리
 import signal
-
-font_path = '/Users/sinjaehyeon/Library/Fonts/helvetica-light-587ebe5a59211.ttf'
-font_name = fm.FontProperties(fname=font_path).get_name()
+# import asyncio
+# import wave
 
 now = datetime.now()
 today = now.date()
@@ -31,6 +28,9 @@ intents.reactions = True
 intents.guilds = True
 intents.voice_states = True
 intents.members = True
+
+font_path = '/Users/sinjaehyeon/Library/Fonts/helvetica-light-587ebe5a59211.ttf'
+font_name = fm.FontProperties(fname=font_path).get_name()
 
 folder = 'file_log'
 FOLDER = "economics"
@@ -51,6 +51,9 @@ STOCK_FILE = 'economics/stock.json'
 TAX_PERSON_FILE = "economics/tax_person.json"
 HISTORY_FILE = "economics/history.json"
 USER_DATA_FILE = "user_data.json"
+recording_files = "recording_files"
+active_voice_clients = {}  # 서버별 활성화된 음성 클라이언트
+
 try:
     with open(USER_DATA_FILE, "r") as file:
         user_data = json.load(file)
@@ -238,8 +241,6 @@ class MyClient(discord.Client):
 
     @staticmethod
     async def on_message(message):
-        user_id = str(message.author.id)  # 유저 ID 가져오기
-
         global stock_increase_decrease_rate  # 전역 변수 선언
         global earned_income_tax
         global lottery_tax
@@ -280,7 +281,7 @@ class MyClient(discord.Client):
             json.dump(user_data, chat_count, indent=4)
 
         # XP 상태 출력
-        if message.content == "!xp":
+        if message.content == "!내채팅정보":
             exp = user_data[user_id]["exp"]
             level = user_data[user_id]["level"]
             messages = user_data[user_id]["messages"]
@@ -298,7 +299,7 @@ class MyClient(discord.Client):
             await message.channel.send(embed=embed)
 
         # EXP 랭킹 출력
-        if message.content == "!xprank":
+        if message.content == "!채팅랭킹":
             ranking = sorted(user_data.items(), key=lambda x: x[1]["exp"], reverse=True)
             ranking_text = "**EXP 랭킹 (상위 10명):**\n"
             for i, (user_id, data) in enumerate(ranking[:10]):
@@ -307,123 +308,123 @@ class MyClient(discord.Client):
             await message.channel.send(ranking_text)
 
 
-        if message.content == "!퀴즈":
-            url = "https://opentdb.com/api.php?amount=1&type=multiple"
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    data = await response.json()
-                    question = data["results"][0]["question"]
-                    correct = data["results"][0]["correct_answer"]
-                    options = data["results"][0]["incorrect_answers"]
-                    options.append(correct)
-                    import random
-                    random.shuffle(options)
-
-                    quiz_text = f"**{question}**\n" + "\n".join([f"{i + 1}. {opt}" for i, opt in enumerate(options)])
-                    await message.channel.send(quiz_text)
-
-                    #유저가 치는 메시지 인식해서 점수 주는 코드 작성 바람
-                    await message.channel.send(f"정답은: **{correct}**")
-
-        if message.content == "!농담":
-            url = "https://official-joke-api.appspot.com/random_joke"
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    data = await response.json()
-                    await message.channel.send(f"{data['setup']} ... {data['punchline']}")
-
-        if message.content.startswith("!날씨"):
-            #이것도 오류 수정 해야함
-            city = message.content.split(" ", 1)[1]
-            api_key = "YOUR_OPENWEATHER_API_KEY"
-            url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric&lang=kr"
-
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    data = await response.json()
-                    if data["cod"] != 200:
-                        await message.channel.send(f"도시를 찾을 수 없습니다: {city}")
-                        return
-
-                    weather = data["weather"][0]["description"]
-                    temp = data["main"]["temp"]
-                    await message.channel.send(f"{city}의 날씨는 {weather}, 현재 온도는 {temp}°C 입니다.")
-
-        #이건 왜 오류나는거임?
-        if message.content.startswith("!요약"):
-            text = message.content.split(" ", 1)[1]
-            url = "https://api.text-summary.com/summarize"
-            params = {"text": text, "ratio": 0.3}
-
-            async with aiohttp.ClientSession() as session:
-                async with session.post(url, json=params) as response:
-                    summary = await response.json()
-                    await message.channel.send(f"요약된 내용: {summary['summary']}")
-
-        #하... api
-        if message.content.startswith("!뉴스"):
-            keyword = message.content.split(" ", 1)[1] if " " in message.content else "최신"
-            api_key = "YOUR_NEWS_API_KEY"
-            url = f"https://newsapi.org/v2/everything?q={keyword}&apiKey={api_key}&language=ko"
-
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    data = await response.json()
-                    articles = data["articles"][:5]
-                    for article in articles:
-                        await message.channel.send(f"**{article['title']}**\n{article['url']}")
-
-        if message.content == "!트렌드":
-            url = "https://trends.google.com/trends/hottrends/visualize/internal/data"
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    data = await response.json()
-                    trends = ", ".join(data["united_states"][:5])  # 미국 트렌드
-                    await message.channel.send(f"현재 트렌드: {trends}")
-
-        if message.content == "!구글트렌드":
-            url = "https://trends.google.com/trends/hottrends/visualize/internal/data"
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    if response.status == 200:
-                        data = await response.json()
-                        trends = ", ".join(data.get("united_states", [])[:10])  # 미국 트렌드 기준
-                        await message.channel.send(f"현재 구글 트렌드(미국): {trends}")
-                    else:
-                        await message.channel.send("구글 트렌드 데이터를 가져올 수 없습니다.")
-
-        #뭔가 이상한걸 불러옴...
-        if message.content == "!네이버트렌드":
-            url = "https://www.signal.bz/news"
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    if response.status == 200:
-                        data = await response.json()
-                        trends = [item["keyword"] for item in data["top10"]]
-                        trends_text = "\n".join([f"{i + 1}. {trend}" for i, trend in enumerate(trends)])
-                        await message.channel.send(f"네이버 실시간 검색어:\n{trends_text}")
-                    else:
-                        await message.channel.send("네이버 실시간 검색어 데이터를 가져올 수 없습니다.")
-
-        #이새끼도 대가리 깨짐
-        if message.content == "!핫뉴스":
-            url = "https://www.yna.co.kr/theme/topnews"  # 연합뉴스 주요 뉴스 페이지
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    if response.status == 200:
-                        html = await response.text()
-                        soup = bs4.BeautifulSoup(html, "html.parser")
-                        articles = soup.select(".list-type038 li")[:10]  # 상위 10개 뉴스
-
-                        news = []
-                        for article in articles:
-                            title = article.select_one("strong").text.strip()
-                            link = article.select_one("a")["href"]
-                            news.append(f"**{title}**\n{link}")
-
-                        await message.channel.send("\n\n".join(news))
-                    else:
-                        await message.channel.send("뉴스 데이터를 가져올 수 없습니다.")
+        # if message.content == "!퀴즈":
+        #     url = "https://opentdb.com/api.php?amount=1&type=multiple"
+        #     async with aiohttp.ClientSession() as session:
+        #         async with session.get(url) as response:
+        #             data = await response.json()
+        #             question = data["results"][0]["question"]
+        #             correct = data["results"][0]["correct_answer"]
+        #             options = data["results"][0]["incorrect_answers"]
+        #             options.append(correct)
+        #             import random
+        #             random.shuffle(options)
+        #
+        #             quiz_text = f"**{question}**\n" + "\n".join([f"{i + 1}. {opt}" for i, opt in enumerate(options)])
+        #             await message.channel.send(quiz_text)
+        #
+        #             #유저가 치는 메시지 인식해서 점수 주는 코드 작성 바람
+        #             await message.channel.send(f"정답은: **{correct}**")
+        #
+        # if message.content == "!농담":
+        #     url = "https://official-joke-api.appspot.com/random_joke"
+        #     async with aiohttp.ClientSession() as session:
+        #         async with session.get(url) as response:
+        #             data = await response.json()
+        #             await message.channel.send(f"{data['setup']} ... {data['punchline']}")
+        #
+        # if message.content.startswith("!날씨"):
+        #     #이것도 오류 수정 해야함
+        #     city = message.content.split(" ", 1)[1]
+        #     api_key = "YOUR_OPENWEATHER_API_KEY"
+        #     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric&lang=kr"
+        #
+        #     async with aiohttp.ClientSession() as session:
+        #         async with session.get(url) as response:
+        #             data = await response.json()
+        #             if data["cod"] != 200:
+        #                 await message.channel.send(f"도시를 찾을 수 없습니다: {city}")
+        #                 return
+        #
+        #             weather = data["weather"][0]["description"]
+        #             temp = data["main"]["temp"]
+        #             await message.channel.send(f"{city}의 날씨는 {weather}, 현재 온도는 {temp}°C 입니다.")
+        #
+        # #이건 왜 오류나는거임?
+        # if message.content.startswith("!요약"):
+        #     text = message.content.split(" ", 1)[1]
+        #     url = "https://api.text-summary.com/summarize"
+        #     params = {"text": text, "ratio": 0.3}
+        #
+        #     async with aiohttp.ClientSession() as session:
+        #         async with session.post(url, json=params) as response:
+        #             summary = await response.json()
+        #             await message.channel.send(f"요약된 내용: {summary['summary']}")
+        #
+        # #하... api
+        # if message.content.startswith("!뉴스"):
+        #     keyword = message.content.split(" ", 1)[1] if " " in message.content else "최신"
+        #     api_key = "YOUR_NEWS_API_KEY"
+        #     url = f"https://newsapi.org/v2/everything?q={keyword}&apiKey={api_key}&language=ko"
+        #
+        #     async with aiohttp.ClientSession() as session:
+        #         async with session.get(url) as response:
+        #             data = await response.json()
+        #             articles = data["articles"][:5]
+        #             for article in articles:
+        #                 await message.channel.send(f"**{article['title']}**\n{article['url']}")
+        #
+        # if message.content == "!트렌드":
+        #     url = "https://trends.google.com/trends/hottrends/visualize/internal/data"
+        #     async with aiohttp.ClientSession() as session:
+        #         async with session.get(url) as response:
+        #             data = await response.json()
+        #             trends = ", ".join(data["united_states"][:5])  # 미국 트렌드
+        #             await message.channel.send(f"현재 트렌드: {trends}")
+        #
+        # if message.content == "!구글트렌드":
+        #     url = "https://trends.google.com/trends/hottrends/visualize/internal/data"
+        #     async with aiohttp.ClientSession() as session:
+        #         async with session.get(url) as response:
+        #             if response.status == 200:
+        #                 data = await response.json()
+        #                 trends = ", ".join(data.get("united_states", [])[:10])  # 미국 트렌드 기준
+        #                 await message.channel.send(f"현재 구글 트렌드(미국): {trends}")
+        #             else:
+        #                 await message.channel.send("구글 트렌드 데이터를 가져올 수 없습니다.")
+        #
+        # #뭔가 이상한걸 불러옴...
+        # if message.content == "!네이버트렌드":
+        #     url = "https://www.signal.bz/news"
+        #     async with aiohttp.ClientSession() as session:
+        #         async with session.get(url) as response:
+        #             if response.status == 200:
+        #                 data = await response.json()
+        #                 trends = [item["keyword"] for item in data["top10"]]
+        #                 trends_text = "\n".join([f"{i + 1}. {trend}" for i, trend in enumerate(trends)])
+        #                 await message.channel.send(f"네이버 실시간 검색어:\n{trends_text}")
+        #             else:
+        #                 await message.channel.send("네이버 실시간 검색어 데이터를 가져올 수 없습니다.")
+        #
+        # #이새끼도 대가리 깨짐
+        # if message.content == "!핫뉴스":
+        #     url = "https://www.yna.co.kr/theme/topnews"  # 연합뉴스 주요 뉴스 페이지
+        #     async with aiohttp.ClientSession() as session:
+        #         async with session.get(url) as response:
+        #             if response.status == 200:
+        #                 html = await response.text()
+        #                 soup = bs4.BeautifulSoup(html, "html.parser")
+        #                 articles = soup.select(".list-type038 li")[:10]  # 상위 10개 뉴스
+        #
+        #                 news = []
+        #                 for article in articles:
+        #                     title = article.select_one("strong").text.strip()
+        #                     link = article.select_one("a")["href"]
+        #                     news.append(f"**{title}**\n{link}")
+        #
+        #                 await message.channel.send("\n\n".join(news))
+        #             else:
+        #                 await message.channel.send("뉴스 데이터를 가져올 수 없습니다.")
 
         if message.content.startswith("$dmnotice"):
             args = message.content.split()
@@ -2151,6 +2152,8 @@ class MyClient(discord.Client):
             embed.add_field(name="!주식그래프 <거래소> <주식코드>", value="주가의 변화를 그래프로 볼 수 있습니다. 주가의 변동을 확인하여 투자 해보세요.", inline=False)
             embed.add_field(name=f"!기부 <금액>", value="기부할 수 있습니다. 기부금은 교육, 의료, 식량, 의류, 주거, 봉사자나 재능기부자의 \n활동비나 실비 지원, 환경, 사회복지, 문화예술, 지방지역사회 활성화 등을 위해 사용됩니다.", inline=False)
             embed.add_field(name="!일당정기소득보기", value="나의 일급을 볼 수 있습니다. 소득에 맞춰 소비수준을 계획해보세요.", inline=False)
+            embed.add_field(name="!내채팅정보", value="내가 친 채팅의 개수와 나의 레벨을 볼 수 있습니다..", inline=False)
+            embed.add_field(name="!채팅랭킹", value="모두의 채팅정보를 한 번에 봅니다. 채팅을 많이 친 순위로 정리됩니다.", inline=False)
 
             await message.channel.send(embed=embed)
 
