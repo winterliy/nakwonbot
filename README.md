@@ -81,8 +81,8 @@
 - $nmd <개수> : 개수만큼 메시지를 삭제합니다.
 - !운세 : 오늘의 운세를 봅니다.
 - !궁합 <@유저1> <@유저2> : 유저간 궁합을 확인합니다
-- $notice : 명령어를 치면 input받음. 모든 채팅에 출력.
-- $dmnotice <유저id> : 명령어를 치면 input받음, 유저에게 dm발송.
+- $notice <횃수> : 횃수만큼. 명령어를 치면 input받음. 모든 채팅에 출력.
+- $dmnotice <횃수> <유저id> : 횃수만큼. 명령어를 치면 input받음, 유저에게 dm발송.
 
 Powerd by NAKWON
 (C) 2024. NAKWON INC. All rights reserved.
