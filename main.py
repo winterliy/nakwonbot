@@ -1,18 +1,19 @@
 import json
 import os
+import time
 # from discord.ext import commands
 # from random import choice
 # from random import randint
 # import yt_dlp as youtube_dl
 from datetime import datetime
 from http import client
-import bs4
+# import bs4
 import discord
 import sys
 # from discord.sinks import WaveSink
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
-import aiohttp  # 비동기 요청 라이브러리
+# import aiohttp  # 비동기 요청 라이브러리
 import signal
 # import asyncio
 # import wave
@@ -79,7 +80,8 @@ fortunes = [
     "작은 성공이 있을 것입니다. 하지만 큰 도전은 피하세요.",
     "조금 더 기다리면 더 좋은 일이 생길 것입니다. 인내가 필요해요.",
     "운이 다소 부족할 수 있습니다. 신중하게 결정하세요.",
-    "오늘은 사람들과의 관계에서 운이 따를 것입니다. 좋은 소식이 있을 거예요.",
+    "오늘은 사람들과의 "
+    "관계에서 운이 따를 것입니다. 좋은 소식이 있을 거예요.",
     "조금 더 노력하면 큰 성과를 거둘 수 있을 것입니다. 포기하지 마세요.",
     "당신의 운세는 그다지 좋지 않습니다. 조심스럽게 행동하세요.",
     "새로운 기회가 올 수 있습니다. 과감히 도전해보세요!"
@@ -209,7 +211,7 @@ def int_changer():
         with open('economics/account.json', "w", encoding="utf-8") as account:
             json.dump(account_data, account, indent=4, ensure_ascii=False)
 
-        print("account.json 파일의 cash와 stocks 값을 성공적으로 정수로 변환했습니다!")
+        print("account.json 파일의 cash stocks 값을 성공적으로 정수로 변환했습니다!")
 
     except Exception as e:
         print(f"오류가 발생했습니다: {e}")
@@ -222,7 +224,7 @@ async def save_image(attachment):
         os.makedirs(folder)
 
     nowtime = datetime.now()
-    time = f"{str(nowtime.year)}년 {str(nowtime.month)}월 {str(nowtime.day)}일 {str(nowtime.hour)}시 {str(nowtime.minute)}분 {str(nowtime.second)}초"
+    save_image_time = f"{str(nowtime.year)}년 {str(nowtime.month)}월 {str(nowtime.day)}일 {str(nowtime.hour)}시 {str(nowtime.minute)}분 {str(nowtime.second)}초"
 
     # image_url = attachment.url
     image_name = attachment.filename
@@ -230,14 +232,32 @@ async def save_image(attachment):
 
     await attachment.save(image_path)
     chatlog = (open('chat_log.txt', 'a'))
-    chatlog.write(f"Saved file: {image_name} at {image_path} in {time}" + '\n')
+    chatlog.write(f"Saved file: {image_name} at {image_path} in {save_image_time}" + '\n')
     chatlog.close()
 
 class MyClient(discord.Client):
     @client.event
     async def on_ready(self):
+        # Discord Rich Presence 설정
+        activity = discord.Activity(
+            type=discord.ActivityType.watching,  # 게임 상태
+            name="우리소리골",  # 게임 이름
+            state="난타를 사랑하는 쌤",  # 상태 텍스트
+            details="오방진장단까지",  # 게임의 상세 내용
+            start=time.time(),  # 시작 시간 (현재 시간으로 설정)
+            # end 시간 (시작 시간으로부터 1시간 뒤로 설정)
+            end=time.time() + 3600,
+            large_image="competitive",  # 큰 이미지 (Discord 개발자 포털에서 설정한 이미지 이름)
+            small_image="rogue_level_100",  # 작은 이미지 (Discord 개발자 포털에서 설정한 이미지 이름)
+            large_text="Competitive",  # 큰 이미지에 텍스트 추가
+            small_text="Rogue - Level 100",  # 작은 이미지에 텍스트 추가
+            party_id="ae488379-351d-4a4f-ad32-2b9b01c91657",  # 파티 ID
+            party_size=523,  # 현재 파티 크기
+            party_max=2009,  # 최대 파티 크기
+            join_secret="MTI4NzM0OjFpMmhuZToxMjMxMjM="  # 참가 비밀
+        )
         await client.change_presence(status=discord.Status.online)
-        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="우리소리골"))
+        await client.change_presence(activity=activity)
 
     @staticmethod
     async def on_message(message):
@@ -259,54 +279,54 @@ class MyClient(discord.Client):
         if message.author.bot:
             return None
 
-        user_id = str(message.author.id)  # 유저 ID를 문자열로 변환
-        content_length = len(message.content)
-
-        # 사용자 데이터 초기화
-        if user_id not in user_data:
-            user_data[user_id] = {"exp": 0, "level": 1, "messages": 0, "name": message.author.name}
-
-        # EXP 및 메시지 수 업데이트
-        user_data[user_id]["exp"] += content_length
-        user_data[user_id]["messages"] += 1
-
-        # 레벨 업 처리
-        if user_data[user_id]["exp"] >= 100000:
-            user_data[user_id]["level"] += 1
-            user_data[user_id]["exp"] -= 100000
-            await message.channel.send(f"🎉 {message.author.name}님이 레벨 {user_data[user_id]['level']}로 올랐습니다!")
-
-        # JSON 데이터 저장
-        with open(USER_DATA_FILE, "w") as chat_count:
-            json.dump(user_data, chat_count, indent=4)
-
-        # XP 상태 출력
-        if message.content == "!내채팅정보":
-            exp = user_data[user_id]["exp"]
-            level = user_data[user_id]["level"]
-            messages = user_data[user_id]["messages"]
-
-            # 임베드 생성
-            embed = discord.Embed(
-                title=f"{message.author.name}님의 프로필",
-                description="유저의 현재 상태입니다.",
-                color=discord.Color.blue()  # 원하는 색상
-            )
-            embed.add_field(name="레벨", value=f"{level}", inline=True)
-            embed.add_field(name="EXP", value=f"{exp}/100000", inline=True)
-            embed.add_field(name="메시지 수", value=f"{messages}", inline=True)
-
-            await message.channel.send(embed=embed)
-
-        # EXP 랭킹 출력
-        if message.content == "!채팅랭킹":
-            ranking = sorted(user_data.items(), key=lambda x: x[1]["exp"], reverse=True)
-            ranking_text = "**EXP 랭킹 (상위 10명):**\n"
-            for i, (user_id, data) in enumerate(ranking[:10]):
-                ranking_text += f"{i + 1}. {data['name']} - {data['exp']} EXP\n"
-
-            await message.channel.send(ranking_text)
-
+        #
+        # user_id = str(message.author.id)  # 유저 ID를 문자열로 변환
+        # content_length = len(message.content)
+        #
+        # # 사용자 데이터 초기화
+        # if user_id not in user_data:
+        #     user_data[user_id] = {"exp": 0, "level": 1, "messages": 0, "name": message.author.name}
+        #
+        # # EXP 및 메시지 수 업데이트
+        # user_data[user_id]["exp"] += content_length
+        # user_data[user_id]["messages"] += 1
+        #
+        # # 레벨 업 처리
+        # if user_data[user_id]["exp"] >= 100000:
+        #     user_data[user_id]["level"] += 1
+        #     user_data[user_id]["exp"] -= 100000
+        #     await message.channel.send(f"🎉 {message.author.name}님이 레벨 {user_data[user_id]['level']}로 올랐습니다!")
+        #
+        # # JSON 데이터 저장
+        # with open(USER_DATA_FILE, "w") as chat_count:
+        #     json.dump(user_data, chat_count, indent=4)
+        #
+        # # XP 상태 출력
+        # if message.content == "!내채팅정보":
+        #     exp = user_data[user_id]["exp"]
+        #     level = user_data[user_id]["level"]
+        #     messages = user_data[user_id]["messages"]
+        #
+        #     # 임베드 생성
+        #     embed = discord.Embed(
+        #         title=f"{message.author.name}님의 프로필",
+        #         description="유저의 현재 상태입니다.",
+        #         color=discord.Color.blue()  # 원하는 색상
+        #     )
+        #     embed.add_field(name="레벨", value=f"{level}", inline=True)
+        #     embed.add_field(name="EXP", value=f"{exp}/100000", inline=True)
+        #     embed.add_field(name="메시지 수", value=f"{messages}", inline=True)
+        #
+        #     await message.channel.send(embed=embed)
+        #
+        # # EXP 랭킹 출력
+        # if message.content == "!채팅랭킹":
+        #     ranking = sorted(user_data.items(), key=lambda x: x[1]["exp"], reverse=True)
+        #     ranking_text = "**EXP 랭킹 (상위 10명):**\n"
+        #     for i, (user_id, data) in enumerate(ranking[:10]):
+        #         ranking_text += f"{i + 1}. {data['name']} - {data['exp']} EXP\n"
+        #
+        #     await message.channel.send(ranking_text)
 
         # if message.content == "!퀴즈":
         #     url = "https://opentdb.com/api.php?amount=1&type=multiple"
@@ -753,6 +773,7 @@ class MyClient(discord.Client):
             today_date = datetime.datetime.now().strftime("%Y-%m-%d")  # 오늘 날짜
 
             # 이미 납세한 경우
+            user_id = str(message.author.id)
             if user_id in tax_person_data and tax_person_data[user_id] == today_date:
                 await message.channel.send("오늘은 이미 납세를 하셨습니다. 내일 다시 시도해 주세요.")
             else:
@@ -2066,7 +2087,7 @@ class MyClient(discord.Client):
 
                     # 각 주식 정보를 임베드에 추가
                     embed.add_field(
-                        name=f"<:nakwon:1308403349829320754> {stock_name} ({stock_nation}의 {stock_exchange}:{stock_key})",
+                        name=f"<:addon:1308403349829320754> {stock_name} ({stock_nation}의 {stock_exchange}:{stock_key})",
                         value=f"현재 가격: {stock_price}원",
                         inline=True
                     )
@@ -2185,23 +2206,33 @@ class MyClient(discord.Client):
 
         if message.content.startswith(''):
             int_changer()
-            # DM인지 확인
-            if isinstance(message.channel, discord.DMChannel):  # DM 채널에서 메시지가 왔는지 확인
-                time = message.created_at
+            args = message.content.split()
+
+            if args[0] == "!":
+                await message.channel.purge(limit=1)
+                message_time = message.created_at
                 chatlog = open('chat_log.txt', 'a')
-                chatlog.write(f"{time} 에 DM에서 {message.author.name} ( {message.author.mention} ) 가 " + "'" + message.content + "'" + " 라고 말함. \n")
+                chatlog.write(f"[{message_time}] CHAT : 비밀메시지 도착함.\n")
                 chatlog.close()
+                print("비밀 채팅이 도착했습니다")
             else:
-                time = message.created_at
-                chatlog = open('chat_log.txt', 'a')
-                chatlog.write(f"{time} 에 {message.guild.name} 에서 {message.author.name} ( {message.author.nick} ) ( {message.author.mention} ) 가 {message.channel.mention} 에서 " + "'"+message.content+"'" + " 라고 말함. \n")
-                chatlog.close()
+                # DM인지 확인
+                if isinstance(message.channel, discord.DMChannel):  # DM 채널에서 메시지가 왔는지 확인
+                    message_time = message.created_at
+                    chatlog = open('chat_log.txt', 'a')
+                    chatlog.write(f"{message_time} 에 DM에서 {message.author.name} ( {message.author.mention} ) 가 " + "'" + message.content + "'" + " 라고 말함. \n")
+                    chatlog.close()
+                else:
+                    message_time = message.created_at
+                    chatlog = open('chat_log.txt', 'a')
+                    chatlog.write(f"{message_time} 에 {message.guild.name} 에서 {message.author.name} ( {message.author.nick} ) ( {message.author.mention} ) 가 {message.channel.mention} 에서 " + "'"+message.content+"'" + " 라고 말함. \n")
+                    chatlog.close()
 
         if message.content.startswith('$nmd'):
             try:
                 count = int(message.content.split()[1])
                 clear_count = count + 1
-                deleted = await message.channel.purge(limit=clear_count)
+                await message.channel.purge(limit=clear_count)
                 await message.channel.send(f"{count}개의 메시지가 삭제되었습니다.", delete_after=5)
             except (IndexError, ValueError):
                 await message.channel.send("사용법: $nmd [숫자]", delete_after=5)
@@ -2236,10 +2267,10 @@ class MyClient(discord.Client):
         message_guild = reaction.message.guild
 
         nowtime = datetime.now()
-        time = f"{str(nowtime.year)}년 {str(nowtime.month)}월 {str(nowtime.day)}일 {str(nowtime.hour)}시 {str(nowtime.minute)}분 {str(nowtime.second)}초"
+        reaction_time = f"{str(nowtime.year)}년 {str(nowtime.month)}월 {str(nowtime.day)}일 {str(nowtime.hour)}시 {str(nowtime.minute)}분 {str(nowtime.second)}초"
 
         chatlog = open('chat_log.txt', 'a')
-        chatlog.write(f"{time} 에 {user.name}이(가) {message_guild} 서버의 {message_time} 에 작성된 {channel} 에 있는 '{message_content}' 메시지에 {reaction_emoji} 이모지로 반응.\n")
+        chatlog.write(f"{reaction_time} 에 {user.name}이(가) {message_guild} 서버의 {message_time} 에 작성된 {channel} 에 있는 '{message_content}' 메시지에 {reaction_emoji} 이모지로 반응.\n")
         chatlog.close()
 
     @staticmethod
@@ -2248,14 +2279,14 @@ class MyClient(discord.Client):
         
         bc = before.content
         ac = after.content
-        nowchatlog = datetime.now()
-        time = f"{str(nowchatlog.year)}년 {str(nowchatlog.month)}월 {str(nowchatlog.day)}일 {str(nowchatlog.hour)}시 {str(nowchatlog.minute)}분 {str(nowchatlog.second)}초"
+        nowchat = datetime.now()
+        edittime = f"{str(nowchat.year)}년 {str(nowchat.month)}월 {str(nowchat.day)}일 {str(nowchat.hour)}시 {str(nowchat.minute)}분 {str(nowchat.second)}초"
 
         chatlog = open('chat_log.txt', 'a')
-        chatlog.write(f"{time} 에 {after.guild.name} 서버의 {after.channel} 에서 {after.author} 가 {before.author} 에 의해 {before.created_at} 에 작성된 ' {bc} ' 를 ' {ac} ' 로 수정 \n")
+        chatlog.write(f"{edittime} 에 {after.guild.name} 서버의 {after.channel} 에서 {after.author} 가 {before.author} 에 의해 {before.created_at} 에 작성된 ' {bc} ' 를 ' {ac} ' 로 수정 \n")
         chatlog.close()
 
 intents = discord.Intents.default()
 intents.message_content = True
 client = MyClient(intents=intents)
-client.run('MTMwNDgwNzE0MTYyMTYzMzAzNA.GzxET_.Qgg84VYU0EGHX6Rnobh0jUY65ObIjNIacbabZw')
+client.run('MTMwNDgwNzE0MTYyMTYzMzAzNA.GJtWRM.Hdz_3S8j0BCI_ypnmsv-rOO9zcAKHf5GNi2fy0')

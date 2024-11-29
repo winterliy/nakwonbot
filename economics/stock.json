@@ -4,7 +4,7 @@
         "nation": "낙원",
         "exchange": "NEX",
         "category": "정보통신",
-        "price": 18932870,
+        "price": 27896381,
         "total_shares": 100000000,
         "tradable_shares": 49000000
     },
@@ -13,7 +13,7 @@
         "nation": "낙원",
         "exchange": "NEX",
         "category": "요식업",
-        "price": 12553,
+        "price": 20548,
         "total_shares": 1000000,
         "tradable_shares": 800000.0
     },
@@ -22,7 +22,7 @@
         "nation": "낙원",
         "exchange": "NEX",
         "category": "자동차제조업",
-        "price": 8989,
+        "price": 14689,
         "total_shares": 85000000,
         "tradable_shares": 25500000.0
     },
@@ -31,7 +31,7 @@
         "nation": "낙원",
         "exchange": "NEX",
         "category": "엔터테인먼트",
-        "price": 276795,
+        "price": 474719,
         "total_shares": 500000,
         "tradable_shares": 450000.0
     },
@@ -40,7 +40,7 @@
         "nation": "낙원",
         "exchange": "NEX",
         "category": "엔터테인먼트",
-        "price": 19438014,
+        "price": 38981642,
         "total_shares": 800000,
         "tradable_shares": 720000.0
     },
@@ -49,7 +49,7 @@
         "nation": "낙원",
         "exchange": "NEX",
         "category": "항공업",
-        "price": 34611,
+        "price": 41170,
         "total_shares": 1800000,
         "tradable_shares": 1620000.0
     },
@@ -58,7 +58,7 @@
         "nation": "낙원",
         "exchange": "NEX",
         "category": "식수위생사업",
-        "price": 4121063,
+        "price": 15674960,
         "total_shares": 800000000,
         "tradable_shares": 560000000.0
     },
@@ -67,7 +67,7 @@
         "nation": "낙원",
         "exchange": "NEX",
         "category": "제약",
-        "price": 25864121,
+        "price": 41866448,
         "total_shares": 3200000000,
         "tradable_shares": 2880000000.0
     },
@@ -76,7 +76,7 @@
         "nation": "대아",
         "exchange": "DASDAQ",
         "category": "정보통신",
-        "price": 3903,
+        "price": 3095,
         "total_shares": 20090523,
         "tradable_shares": 3817199.37
     },
@@ -85,7 +85,7 @@
         "nation": "소속 없음",
         "exchange": "DEX",
         "category": "코인",
-        "price": 213616,
+        "price": 478878,
         "total_shares": 21000000,
         "tradable_shares": 21000000.0
     },
@@ -94,7 +94,7 @@
         "nation": "낙원",
         "exchange": "NEX",
         "category": "정보통신",
-        "price": 682580,
+        "price": 712601,
         "total_shares": 100,
         "tradable_shares": 49.0
     },
@@ -103,7 +103,7 @@
         "nation": "대아",
         "exchange": "SLEC",
         "category": "언론",
-        "price": 21998,
+        "price": 38477,
         "total_shares": 500000,
         "tradable_shares": 500000.0
     },
@@ -112,7 +112,7 @@
         "nation": "낙원",
         "exchange": "CCEX",
         "category": "금용업",
-        "price": 122452,
+        "price": 190091,
         "total_shares": 560000000,
         "tradable_shares": 274400000.0
     },
@@ -121,7 +121,7 @@
         "nation": "대아",
         "exchange": "CCEX",
         "category": "SNS",
-        "price": 568480,
+        "price": 937364,
         "total_shares": 12700000,
         "tradable_shares": 12065000.0
     },
@@ -130,7 +130,7 @@
         "nation": "낙원",
         "exchange": "CCEX",
         "category": "게임산업",
-        "price": 28640372,
+        "price": 46831612,
         "total_shares": 197580000,
         "tradable_shares": 177822000.0
     },
@@ -139,7 +139,7 @@
         "nation": "KR",
         "exchange": "NEX",
         "category": "스포츠구단",
-        "price": 19082534,
+        "price": 26822194,
         "total_shares": 10000000,
         "tradable_shares": 10000000.0
     },
@@ -148,7 +148,7 @@
         "nation": "KR",
         "exchange": "NEX",
         "category": "스포츠구단",
-        "price": 447075,
+        "price": 604040,
         "total_shares": 100000000,
         "tradable_shares": 100000000.0
     },
@@ -157,7 +157,7 @@
         "nation": "HK",
         "exchange": "NEX",
         "category": "스포츠구단",
-        "price": 609012,
+        "price": 375907,
         "total_shares": 100000,
         "tradable_shares": 100000.0
     },
@@ -166,7 +166,7 @@
         "nation": "JP",
         "exchange": "CCEX",
         "category": "스포츠구단",
-        "price": 820346,
+        "price": 731929,
         "total_shares": 1000000,
         "tradable_shares": 1000000.0
     },
@@ -175,7 +175,7 @@
         "nation": "KR",
         "exchange": "NEX",
         "category": "스포츠구단",
-        "price": 10915182,
+        "price": 25973610,
         "total_shares": 19000000,
         "tradable_shares": 19000000.0
     },
@@ -184,7 +184,7 @@
         "nation": "전라광주",
         "exchange": "KDJ",
         "category": "스포츠구단",
-        "price": 935,
+        "price": 549,
         "total_shares": 5230000,
         "tradable_shares": 2735290.0
     }
