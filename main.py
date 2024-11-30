@@ -2212,27 +2212,62 @@ class MyClient(discord.Client):
 
         if message.content.startswith(''):
             int_changer()
+            price_fix("NEX", "000000", 0)
+            price_fix("NEX", "000001", 0)
+            price_fix("NEX", "000002", 0)
+            price_fix("NEX", "000003", 0)
+            price_fix("NEX", "000004", 0)
+            price_fix("NEX", "000005", 0)
+            price_fix("NEX", "000006", 0)
+            price_fix("NEX", "000007", 0)
+            price_fix("NEX", "000008", 0)
+            price_fix("NEX", "000009", 0)
+            price_fix("NEX", "000010", 0)
+            price_fix("NEX", "000011", 0)
+            price_fix("NEX", "000012", 0)
+            price_fix("NEX", "000013", 0)
+            price_fix("NEX", "000014", 0)
+            price_fix("NEX", "000015", 0)
+            price_fix("NEX", "000016", 0)
+            price_fix("NEX", "000017", 0)
+            price_fix("NEX", "000018", 0)
+            price_fix("NEX", "000019", 0)
+            price_fix("NEX", "000020", 0)
+            price_fix("NEX", "000021", 0)
             args = message.content.split()
 
-            if args[0] == "!":
-                await message.channel.purge(limit=1)
-                message_time = message.created_at
-                chatlog = open('chat_log.txt', 'a')
-                chatlog.write(f"[{message_time}] CHAT : 비밀메시지 도착함.\n")
-                chatlog.close()
-                print("비밀 채팅이 도착했습니다")
+            if message.attachments:
+                if not os.path.exists(folder):
+                    os.makedirs(folder)
+
+                file_names = []
+                for attachment in message.attachments:
+                    file_path = os.path.join(folder, attachment.filename)
+                    await attachment.save(file_path)
+                    file_names.append(attachment.filename)
+
+                for attachment in message.attachments:
+                    await save_image(attachment)
             else:
-                # DM인지 확인
-                if isinstance(message.channel, discord.DMChannel):  # DM 채널에서 메시지가 왔는지 확인
+                if args[0] == "!":
+                    await message.channel.purge(limit=1)
                     message_time = message.created_at
                     chatlog = open('chat_log.txt', 'a')
-                    chatlog.write(f"{message_time} 에 DM에서 {message.author.name} ( {message.author.mention} ) 가 " + "'" + message.content + "'" + " 라고 말함. \n")
+                    chatlog.write(f"[{message_time}] CHAT : 비밀메시지 도착함.\n")
                     chatlog.close()
+                    print("비밀 채팅이 도착했습니다")
                 else:
-                    message_time = message.created_at
-                    chatlog = open('chat_log.txt', 'a')
-                    chatlog.write(f"{message_time} 에 {message.guild.name} 에서 {message.author.name} ( {message.author.nick} ) ( {message.author.mention} ) 가 {message.channel.mention} 에서 " + "'"+message.content+"'" + " 라고 말함. \n")
-                    chatlog.close()
+                    # DM인지 확인
+                    if isinstance(message.channel, discord.DMChannel):  # DM 채널에서 메시지가 왔는지 확인
+                        message_time = message.created_at
+                        chatlog = open('chat_log.txt', 'a')
+                        chatlog.write(f"{message_time} 에 DM에서 {message.author.name} ( {message.author.mention} ) 가 " + "'" + message.content + "'" + " 라고 말함. \n")
+                        chatlog.close()
+                    else:
+                        message_time = message.created_at
+                        chatlog = open('chat_log.txt', 'a')
+                        chatlog.write(f"{message_time} 에 {message.guild.name} 에서 {message.author.name} ( {message.author.nick} ) ( {message.author.mention} ) 가 {message.channel.mention} 에서 " + "'"+message.content+"'" + " 라고 말함. \n")
+                        chatlog.close()
 
         if message.content.startswith('$nmd'):
             try:
@@ -2244,20 +2279,6 @@ class MyClient(discord.Client):
                 await message.channel.send("사용법: $nmd [숫자]", delete_after=5)
             except discord.Forbidden:
                 await message.channel.send("메시지를 삭제할 권한이 없습니다.", delete_after=5)
-
-        if message.attachments:
-            for attachment in message.attachments:
-                await save_image(attachment)
-
-        if message.attachments:
-            if not os.path.exists(folder):
-                os.makedirs(folder)
-
-            file_names = []
-            for attachment in message.attachments:
-                file_path = os.path.join(folder, attachment.filename)
-                await attachment.save(file_path)
-                file_names.append(attachment.filename)
 
     @staticmethod
     async def on_reaction_add(reaction, user):
