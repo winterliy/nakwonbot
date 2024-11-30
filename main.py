@@ -2103,7 +2103,7 @@ class MyClient(discord.Client):
             except Exception as e:
                 await message.channel.send(f"주식 목록 조회 중 오류가 발생했습니다: {e}")
 
-        if message.content == "!자산순":
+        if message.content == "!자산순위":
             stock_random()
 
             import operator
