@@ -2212,28 +2212,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith(''):
             int_changer()
-            price_fix("NEX", "000000", 0)
-            price_fix("NEX", "000001", 0)
-            price_fix("NEX", "000002", 0)
-            price_fix("NEX", "000003", 0)
-            price_fix("NEX", "000004", 0)
-            price_fix("NEX", "000005", 0)
-            price_fix("NEX", "000006", 0)
-            price_fix("NEX", "000007", 0)
-            price_fix("DASDAQ", "000008", 0)
-            price_fix("DEX", "000009", 0)
-            price_fix("NEX", "000010", 0)
-            price_fix("SLEC", "000011", 0)
-            price_fix("CCEX", "000012", 0)
-            price_fix("CCEX", "000013", 0)
-            price_fix("CCEX", "000014", 0)
-            price_fix("NEX", "000015", 0)
-            price_fix("NEX", "000016", 0)
-            price_fix("NEX", "000017", 0)
-            price_fix("CCEX", "000018", 0)
-            price_fix("NEX", "000019", 0)
-            price_fix("KDJ", "000020", 0)
-            price_fix("BIGMAC", "000021", 0)
+
             args = message.content.split()
 
             if message.attachments:
