@@ -2103,7 +2103,7 @@ class MyClient(discord.Client):
             except Exception as e:
                 await message.channel.send(f"주식 목록 조회 중 오류가 발생했습니다: {e}")
 
-        if message.content == "!랭킹":
+        if message.content == "!자산순":
             stock_random()
 
             import operator
@@ -2172,7 +2172,7 @@ class MyClient(discord.Client):
             embed.add_field(name="!주식기록 <거래소> <주식코드>", value="특정 주식의 가격 변동 기록을 확인합니다.", inline=True)
             embed.add_field(name="!bet <금액>", value="도박을 할 수 있습니다. 금액을 설정하고 도박에 참여하세요.", inline=True)
             embed.add_field(name="!로또참여", value="10만원을 내고 로또에 참가할 수 있습니다. 당신의 운을 시험해보세요.", inline=True)
-            embed.add_field(name="!랭킹", value="총 자산의 순위을 볼 수 있습니다. 유저들의 자산을 확인해보세요.", inline=True)
+            embed.add_field(name="!자산순위", value="총 자산의 순위을 볼 수 있습니다. 유저들의 자산을 확인해보세요.", inline=True)
             embed.add_field(name="!세율", value="세율을 볼 수 있습니다. 현행 세율을 확인해보세요.", inline=True)
             embed.add_field(name="!주식그래프 <거래소> <주식코드>", value="주가의 변화를 그래프로 볼 수 있습니다. 주가의 변동을 확인하여 투자 해보세요.", inline=True)
             embed.add_field(name=f"!기부 <금액>", value="기부할 수 있습니다. 기부금은 교육, 의료, 식량, 의류, 주거, 봉사자나 재능기부자의 \n활동비나 실비 지원, 환경, 사회복지, 문화예술, 지방지역사회 활성화 등을 위해 사용됩니다.", inline=True)
