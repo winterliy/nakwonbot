@@ -2,8 +2,7 @@ import json
 import os
 import time
 # from discord.ext import commands
-# from random import choice
-# from random import randint
+# from random import choice, randint
 # import yt_dlp as youtube_dl
 from datetime import datetime
 from http import client
@@ -279,6 +278,13 @@ class MyClient(discord.Client):
         if message.author.bot:
             return None
 
+        # if message.content.startswith("!test"):
+        #     webhook = await message.channel.create_webhook(name="Alert Bot")
+        #     await webhook.send("긴급 알림: 서버 점검 예정입니다!")
+        #
+        #     user = message.mentions[0] if message.mentions else message.author
+        #     await message.channel.send(user.avatar.url)
+        #
         #
         # user_id = str(message.author.id)  # 유저 ID를 문자열로 변환
         # content_length = len(message.content)
@@ -2173,8 +2179,8 @@ class MyClient(discord.Client):
             embed.add_field(name="!일당정기소득보기", value="나의 일급을 볼 수 있습니다. 소득에 맞춰 소비수준을 계획해보세요.", inline=True)
             embed.add_field(name="!운세", value="운세를 볼 수 있습니다.", inline=False)
             embed.add_field(name="!궁합 <유저1> <유저2>", value="궁합을 볼 수 있습니다. 유저 간의 궁합을 시험해보세요.", inline=True)
-            embed.add_field(name="!내채팅정보", value="내가 친 채팅의 개수와 나의 레벨을 볼 수 있습니다..", inline=False)
-            embed.add_field(name="!채팅랭킹", value="모두의 채팅정보를 한 번에 봅니다. 채팅을 많이 친 순위로 정리됩니다.", inline=True)
+            # embed.add_field(name="!내채팅정보", value="내가 친 채팅의 개수와 나의 레벨을 볼 수 있습니다..", inline=False)
+            # embed.add_field(name="!채팅랭킹", value="모두의 채팅정보를 한 번에 봅니다. 채팅을 많이 친 순위로 정리됩니다.", inline=True)
 
             await message.channel.send(embed=embed)
 
