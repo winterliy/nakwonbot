@@ -1,14 +1,14 @@
 {
     "1076861147560542278": {
-        "exp": 946,
+        "exp": 984,
         "level": 1,
-        "messages": 91,
+        "messages": 104,
         "name": "jae.hyo.ning"
     },
     "945104430808850463": {
         "exp": 99,
         "level": 1,
-        "messages": 21,
+        "messages": 22,
         "name": "nato4010"
     },
     "1069480375203663932": {
@@ -18,9 +18,9 @@
         "name": "sel0ne"
     },
     "1055062545980997672": {
-        "exp": 481,
+        "exp": 1646,
         "level": 1,
-        "messages": 43,
+        "messages": 86,
         "name": "kr_appleman"
     },
     "995253225588527135": {
@@ -30,9 +30,9 @@
         "name": "dlddld_"
     },
     "1263036580872982651": {
-        "exp": 8,
+        "exp": 920,
         "level": 1,
-        "messages": 2,
+        "messages": 20,
         "name": "p0304__"
     },
     "1194643182932201564": {
@@ -40,5 +40,17 @@
         "level": 1,
         "messages": 2,
         "name": "shuekrimkalgooksu"
+    },
+    "1240660380439805977": {
+        "exp": 21,
+        "level": 1,
+        "messages": 2,
+        "name": "syu0284"
+    },
+    "1264769378919125127": {
+        "exp": 6,
+        "level": 1,
+        "messages": 3,
+        "name": "sjehbw"
     }
 }

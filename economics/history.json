@@ -28446,5 +28446,7740 @@
         "code": "Unknown",
         "name": "000020",
         "price": 727
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 16754647
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 13485
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 8574
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 268494
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 18499842
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 30985
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 4328202
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 22870209
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4534
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 207126
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 700732
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 22496
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 109025
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 604962
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 20515621
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 17103968
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 398557
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 592970
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 746658
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 8804354
+    },
+    {
+        "time": "2024-11-28 23:15:23",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 672
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 18616284
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 13783
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 8313
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 260396
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 19964594
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 32355
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 4279280
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 26252241
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4268
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 233540
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 672276
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 21148
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 104349
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 595332
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 24251634
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 19838012
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 394353
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 639468
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 852629
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 9578291
+    },
+    {
+        "time": "2024-11-28 23:16:57",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 788
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 18932870
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 12553
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 8989
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 276795
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 19438014
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 34611
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 4121063
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 25864121
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3903
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 213616
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 682580
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 21998
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 122452
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 568480
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 28640372
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 19082534
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 447075
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 609012
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 820346
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 10915182
+    },
+    {
+        "time": "2024-11-28 23:17:47",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 935
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 17628775
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 11599
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 8544
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 293933
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 18758957
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 34137
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 4241506
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 30524154
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4583
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 195022
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 672970
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 21451
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 128229
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 582575
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 33850037
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 17568337
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 474576
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 563562
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 769086
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 11796427
+    },
+    {
+        "time": "2024-11-29 17:27:44",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 958
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 16666047
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 12334
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 8396
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 273022
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 17280036
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 31693
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 4819333
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 33401164
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4666
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 232784
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 661230
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 24110
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 116647
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 563563
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 37156382
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 20173300
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 442118
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 645061
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 728458
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 13023321
+    },
+    {
+        "time": "2024-11-29 17:27:52",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1096
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 17491638
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 13734
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 9258
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 270272
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 19674497
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 37411
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 5559942
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 30108643
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 5021
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 247917
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 601322
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 22756
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 118890
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 529315
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 42302025
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 18848015
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 427155
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 703484
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 687487
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 14521663
+    },
+    {
+        "time": "2024-11-29 17:36:59",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1021
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 16218249
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 14504
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 9097
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 267209
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 23527515
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 42432
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 6396637
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 30450501
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4812
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 297204
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 640344
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 26286
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 120281
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 544920
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 38799619
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 18082493
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 496264
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 633928
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 664174
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 16472867
+    },
+    {
+        "time": "2024-11-29 17:44:26",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 932
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 18641626
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 15304
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 8900
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 285563
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 24460720
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 41441
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 6750098
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 35406892
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4409
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 311543
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 632341
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 25218
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 122985
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 529868
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 41706874
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 17422110
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 449834
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 604955
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 612029
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 19162644
+    },
+    {
+        "time": "2024-11-29 17:46:08",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 920
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 19455178
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 14985
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 9525
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 333117
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 28433775
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 44818
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 6339203
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 34660360
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4015
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 320503
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 679793
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 29164
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 136897
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 578317
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 47133659
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 18019967
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 431643
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 584434
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 664785
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 21229195
+    },
+    {
+        "time": "2024-11-29 17:47:04",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1098
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 18432256
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 14277
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 9035
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 381208
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 32145288
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 47094
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 6801755
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 36618615
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3783
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 382497
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 644252
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 31679
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 133094
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 682128
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 48263699
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 17565982
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 456788
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 606256
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 605332
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 23706595
+    },
+    {
+        "time": "2024-11-29 17:47:21",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1124
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 16830190
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 13085
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 8929
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 373660
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 30666604
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 45627
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 6528327
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 37503153
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3743
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 350874
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 607015
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 32291
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 124899
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 736802
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 54446291
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 16803250
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 452184
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 549538
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 593670
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 27620060
+    },
+    {
+        "time": "2024-11-29 17:47:28",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1089
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 17889858
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 13266
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 8706
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 354766
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 29620700
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 44467
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 7039762
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 36997793
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3444
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 399513
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 590090
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 30632
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 132663
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 728680
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 53005195
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 19659739
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 423892
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 589679
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 616362
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 28604119
+    },
+    {
+        "time": "2024-11-29 17:47:34",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1265
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 20305645
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 12661
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 7937
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 405729
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 27442967
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 40266
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 6967353
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 40918097
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3871
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 375780
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 658370
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 34309
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 120973
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 809622
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 62682803
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 18230093
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 504899
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 577008
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 677602
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 27732995
+    },
+    {
+        "time": "2024-11-29 17:47:45",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1220
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 18757602
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 13524
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 9001
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 453128
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 26413226
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 46631
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 7935129
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 37346342
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4451
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 431102
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 632445
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 31464
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 116716
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 896728
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 66186850
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 17271228
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 457861
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 592391
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 709104
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 29809918
+    },
+    {
+        "time": "2024-11-29 17:47:50",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1307
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 22485400
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 14199
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 9869
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 503278
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 31667481
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 53445
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 8910602
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 41704738
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4231
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 415744
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 616593
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 29971
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 124450
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 849379
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 63564898
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 15671550
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 445961
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 543715
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 671559
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 32425201
+    },
+    {
+        "time": "2024-11-29 17:47:59",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1233
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 21088764
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 12914
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 11568
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 469462
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 30658559
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 48767
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 9320958
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 39407674
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4420
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 458721
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 576913
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 28570
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 127081
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 978909
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 65502396
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 17771691
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 530419
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 509206
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 647536
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 31742272
+    },
+    {
+        "time": "2024-11-29 17:48:12",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1171
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 23459778
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 15280
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 12338
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 553628
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 31854440
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 54461
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 10856308
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 45250642
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4097
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 413781
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 529972
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 28165
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 120248
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1004961
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 63943050
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 20390352
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 523330
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 482956
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 631111
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 32854250
+    },
+    {
+        "time": "2024-11-29 17:48:19",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1062
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 22884584
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 18269
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 13790
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 499877
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 31203936
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 59105
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 9873545
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 52725129
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4054
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 393680
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 517188
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 33536
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 133256
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 930756
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 60105403
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 21955368
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 582829
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 465429
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 727358
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 31580929
+    },
+    {
+        "time": "2024-11-29 17:48:36",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 961
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 24289444
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 16689
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 13534
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 492185
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 29948096
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 55345
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 11584785
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 48245778
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3857
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 426050
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 599826
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 32018
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 144368
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1087300
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 54461440
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 20025393
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 542397
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 524168
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 812334
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 28579834
+    },
+    {
+        "time": "2024-11-29 17:49:15",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1022
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 23369122
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 16928
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 14547
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 520948
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 32663944
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 53391
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 11833431
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 51451068
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3703
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 411707
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 649269
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 30686
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 141393
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 979074
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 53215118
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 18864641
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 497239
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 489441
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 944888
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 26213679
+    },
+    {
+        "time": "2024-11-29 17:50:06",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1187
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 21468426
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 16095
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 14911
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 615783
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 31426798
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 48742
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 12991181
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 48846744
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3468
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 373617
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 625704
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 31293
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 155224
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1069853
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 48614847
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 20114336
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 548791
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 440838
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 853700
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 25125536
+    },
+    {
+        "time": "2024-11-29 17:56:14",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 1211
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 23898452
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 16769
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 14244
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 580671
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 37690103
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 46571
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 12417008
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 44986854
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3374
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 446021
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 748429
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 29778
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 185280
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1120911
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 44218668
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 24128833
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 590477
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 452287
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 769000
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 23772195
+    },
+    {
+        "time": "2024-11-29 23:19:56",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 475
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 21799699
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 16360
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 15764
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 537941
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 36820669
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 45597
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 14219055
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 42795636
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3202
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 519135
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 838243
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 35406
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 168059
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1054313
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 40595806
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 22633626
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 548575
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 435555
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 743596
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 25412249
+    },
+    {
+        "time": "2024-11-29 23:26:00",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 444
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 25463334
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 17814
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 15349
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 491627
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 41370485
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 43228
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 15224642
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 40310834
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3389
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 529725
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 778330
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 41038
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 181312
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 958198
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 45333357
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 22912347
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 652657
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 409648
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 761078
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 28470467
+    },
+    {
+        "time": "2024-11-29 23:31:46",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 466
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 27896381
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 20548
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 14689
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 474719
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 38981642
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 41170
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 15674960
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 41866448
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3095
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 478878
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 712601
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 38477
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 190091
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 937364
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 46831612
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 26822194
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 604040
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 375907
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 731929
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 25973610
+    },
+    {
+        "time": "2024-11-29 23:33:47",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 549
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 32312925
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 22814
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 15782
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 511101
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 43280102
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 38979
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 14287274
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 46982138
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 2788
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 520796
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 674681
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 40639
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 228071
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1051690
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 45457615
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 26109231
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 683281
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 410877
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 670563
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 24754699
+    },
+    {
+        "time": "2024-11-30 02:55:21",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 610
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 33185079
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 25535
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 16585
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 472919
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 49785069
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 38032
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 15478226
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 44421813
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 2867
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 485554
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 683132
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 37031
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 253801
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1207342
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 49057712
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 30244632
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 775651
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 394810
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 652749
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 27210587
+    },
+    {
+        "time": "2024-11-30 02:55:35",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 582
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 30251195
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 23726
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 16311
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 478379
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 49154821
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 36420
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 16201622
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 43161532
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 2602
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 508668
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 744073
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 41859
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 251195
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1180330
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 51319578
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 29815331
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 887668
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 444568
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 737473
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 25005351
+    },
+    {
+        "time": "2024-11-30 10:05:11",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 539
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 29772149
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 24979
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 15043
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 471085
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 49670225
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 42725
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 15114822
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 41266152
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 2537
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 532337
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 724060
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 38852
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 239145
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1347437
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 57870439
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 27664644
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1024094
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 466530
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 821825
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 24717319
+    },
+    {
+        "time": "2024-11-30 10:05:23",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 579
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 32174362
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 29845
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 13643
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 458962
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 45972699
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 51157
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 13742681
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 45021756
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 2628
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 519521
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 800078
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 37791
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 247761
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1254718
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 52844258
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 26268680
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1219719
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 460621
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 867049
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 23040270
+    },
+    {
+        "time": "2024-11-30 10:18:43",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 647
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 30971055
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 27920
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 13973
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 441901
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 55124003
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 49753
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 14247227
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 41341122
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3099
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 592634
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 852842
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 36796
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 231517
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1225540
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 62489739
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 25409736
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1134348
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 424206
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 977345
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 23924428
+    },
+    {
+        "time": "2024-11-30 10:18:44",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 610
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 29412825
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 33209
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 14819
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 409485
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 59535717
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 51660
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 13489561
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 39665179
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3186
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 645571
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 816701
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 38160
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 210154
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1395783
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 58248146
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 25946887
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1110615
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 445307
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 947729
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 22806152
+    },
+    {
+        "time": "2024-11-30 10:36:06",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 703
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 27635745
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 30572
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 16572
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 372243
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 70060129
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 61563
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 15719178
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 37683544
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3310
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 583610
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 911229
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 38828
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 204838
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1665242
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 64912560
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 24133943
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1040127
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 424019
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 874358
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 20603689
+    },
+    {
+        "time": "2024-11-30 10:37:27",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 773
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 25253335
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 29690
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 15356
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 339807
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 68136777
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 59088
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 14650320
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 38850285
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3424
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 638618
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 932799
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 36665
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 197112
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1706807
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 60584875
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 25524138
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1226989
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 432798
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 829218
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 19114355
+    },
+    {
+        "time": "2024-11-30 12:13:09",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 786
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 28758821
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 27638
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 14186
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 361219
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 77411445
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 56748
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 15735124
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 37283389
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3141
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 724893
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 878805
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 35168
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 225638
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1983669
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 61522620
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 28982435
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1276995
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 451573
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 792754
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 21962998
+    },
+    {
+        "time": "2024-11-30 12:53:44",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 904
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 27273824
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 28503
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 13336
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 415787
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 71927643
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 58214
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 18177892
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 34180245
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3279
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 778418
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 863945
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 33671
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 205990
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 1942579
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 57869907
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 27990053
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1244301
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 528156
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 727475
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 26350566
+    },
+    {
+        "time": "2024-11-30 13:20:56",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 831
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 28330689
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 27898
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 14082
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 396539
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 78147144
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 53516
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 21558553
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 37474745
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3043
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 807095
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 972532
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 34544
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 238593
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 2124079
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 54126961
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 27300452
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1177476
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 557696
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 672236
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 24717202
+    },
+    {
+        "time": "2024-11-30 13:23:11",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 996
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 29029525
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 26580
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 13792
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 431381
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 79841366
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 54416
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 24065487
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 34400139
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 2960
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 782837
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 958145
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 39145
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 223249
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 2194000
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 49234810
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 24571543
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1060039
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 610146
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 751255
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 23373308
+    },
+    {
+        "time": "2024-11-30 17:06:11",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 499
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 27567710
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 27773
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 12658
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 471401
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 82112880
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 52114
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 27930329
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 40285410
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3379
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 745770
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 873220
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 37694
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 201279
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 2577860
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 44449072
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 27625397
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1252362
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 570910
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 725903
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 22608210
+    },
+    {
+        "time": "2024-11-30 17:07:22",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 471
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 28083787
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 29800
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 11805
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 440510
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 73979113
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 47342
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 27623971
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 39448884
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3974
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 707303
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 857068
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 34622
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 234200
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 2661517
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 41664267
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 24951565
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1199495
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 515544
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 778776
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 20954124
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 604
+    },
+    {
+        "time": "2024-11-30 17:09:51",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 9049
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 26073766
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 34887
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 10776
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 520085
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 72106511
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 52031
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 28162991
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 40024604
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3643
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 677782
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 1011372
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 32539
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 267323
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 2612920
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 40581861
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 22508604
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1128480
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 568310
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 743021
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 19263356
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 564
+    },
+    {
+        "time": "2024-11-30 17:09:59",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 8184
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 26506846
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 34242
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 10543
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 469110
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 73528339
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 55632
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 25607339
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 38354681
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3434
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 810635
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 1186287
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 37000
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 273354
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 2466223
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 38505031
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 22092729
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1148691
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 560872
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 679426
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 21651850
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 481
+    },
+    {
+        "time": "2024-11-30 23:44:55",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 7884
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 31773668
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 33251
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 10024
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 533159
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 85571134
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 52879
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 23863585
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 35431746
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3093
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 899776
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 1278528
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 34856
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 249543
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 2338646
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 37590158
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 21672303
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1335002
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 542477
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 644944
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 25922021
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 603
+    },
+    {
+        "time": "2024-11-30 23:46:06",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 8847
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 34087028
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 39676
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 11563
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 539942
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 84092379
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 56111
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 25033844
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 32360944
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3398
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 1054969
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 1492730
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 36192
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 247028
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 2280168
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 34981756
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 20279343
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1214176
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 492245
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 762487
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 30266303
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 698
+    },
+    {
+        "time": "2024-11-30 23:46:26",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 9850
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 32904189
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 38042
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 11387
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 500391
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 88943330
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 59446
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 25322746
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 29502395
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 3785
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 976986
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 1680100
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 38650
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 288268
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 2729832
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 33737256
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 18316489
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1180297
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 444604
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 739348
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 30980948
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 688
+    },
+    {
+        "time": "2024-11-30 23:46:28",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 9421
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 31460775
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 34238
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 13545
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 452815
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 99370071
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 57364
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 22819563
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 34855644
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 4413
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 1105917
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 1612796
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 37362
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 263222
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 2469891
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 33073556
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 16995350
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 1079504
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 468321
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 695363
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 30381358
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 728
+    },
+    {
+        "time": "2024-11-30 23:46:30",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 9982
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:57:58",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:24",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 100
+    },
+    {
+        "time": "2024-11-30 23:59:46",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:01:21",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:17",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000000",
+        "price": 112
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000001",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000002",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000003",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000004",
+        "price": 102
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000005",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000006",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000007",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "DASDAQ",
+        "code": "Unknown",
+        "name": "000008",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "DEX",
+        "code": "Unknown",
+        "name": "000009",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000010",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "SLEC",
+        "code": "Unknown",
+        "name": "000011",
+        "price": 112
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000012",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000013",
+        "price": 101
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000014",
+        "price": 118
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000015",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000016",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000017",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "CCEX",
+        "code": "Unknown",
+        "name": "000018",
+        "price": 100
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "NEX",
+        "code": "Unknown",
+        "name": "000019",
+        "price": 113
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "KDJ",
+        "code": "Unknown",
+        "name": "000020",
+        "price": 103
+    },
+    {
+        "time": "2024-12-01 00:14:27",
+        "exchange": "BIGMAC",
+        "code": "Unknown",
+        "name": "000021",
+        "price": 100
     }
 ]
