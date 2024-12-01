@@ -1267,6 +1267,8 @@ async def on_message(message):
     elif message.content.startswith("!매수"):
         price_fix("KDJ", "000020", 523)
 
+        #발행된 주 횃수 관련 설정 할 것.
+
         args = message.content.split()[1:]  # 명령어 인자 분리
         user_id = str(message.author.id)  # 유저 ID 가져오기
 
@@ -1362,6 +1364,10 @@ async def on_message(message):
     # !매도 명령어 처리
     elif message.content.startswith("!매도"):
         price_fix("KDJ", "000020", 523)
+
+        # with open('stock.json', 'r') as stock:
+        # if stock[]
+        # 추후에 시장에 상장된 개수 넘으면 조치하는거 넣을 것.
 
         args = message.content.split()[1:]  # 명령어 인자 분리
         user_id = str(message.author.id)  # 유저 ID 가져오기
@@ -2274,4 +2280,4 @@ async def on_message(message):
             await message.channel.send("메시지를 삭제할 권한이 없습니다.", delete_after=5)
 
 
-client.run('MTMwNDgwNzE0MTYyMTYzMzAzNA.GJtWRM.Hdz_3S8j0BCI_ypnmsv-rOO9zcAKHf5GNi2fy0')
+client.run('')
