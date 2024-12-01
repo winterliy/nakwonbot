@@ -34,7 +34,6 @@ font_name = fm.FontProperties(fname=font_path).get_name()
 
 folder = 'file_log'
 FOLDER = "economics"
-account_file = 'account.json'
 FILES = {
     "stock.json": {},
     "account.json": {},
@@ -45,23 +44,17 @@ FILES = {
     "lotto_player.json": [],
     "tax.json": [],
     "gamble_reward.json": {"multiplier": 2},
+    "user_name.json" : {}
 }
-ACCOUNT_FILE = 'economics/account.json'
-STOCK_FILE = 'economics/stock.json'
-TAX_PERSON_FILE = "economics/tax_person.json"
-HISTORY_FILE = "economics/history.json"
-USER_DATA_FILE = "user_data.json"
-recording_files = "recording_files"
-active_voice_clients = {}  # 서버별 활성화된 음성 클라이언트
 
 try:
-    with open(USER_DATA_FILE, "r") as file:
+    with open(FILES["user_name.json"], "r") as file:
         user_data = json.load(file)
 except (FileNotFoundError, json.JSONDecodeError):
     user_data = {}
 
 # 종료 시 데이터 저장 핸들러
-signal.signal(signal.SIGINT, lambda sig, frame: (json.dump(user_data, open(USER_DATA_FILE, "w"), indent=4), sys.exit(0)))
+signal.signal(signal.SIGINT, lambda sig, frame: (json.dump(user_data, open(FILES["user_name.json"], "w"), indent=4), sys.exit(0)))
 
 
 # 폴더 및 파일 생성
@@ -115,8 +108,8 @@ def price_fix(exchange, stock, price):
 
     stock_path = os.path.join(FOLDER, "stock.json")
 
-    with open(stock_path, "r", encoding="utf-8") as stock_file:
-        stock_data = json.load(stock_file)
+    with open(stock_path, "r", encoding="utf-8") as FILES["stock.json"]:
+        stock_data = json.load(FILES["stock.json"])
 
     if stock not in stock_data or stock_data[stock]["exchange"] != exchange:
         print("해당 주식이 존재하지 않습니다.")
@@ -124,8 +117,8 @@ def price_fix(exchange, stock, price):
 
     stock_data[stock]["price"] = price
 
-    with open(stock_path, "w", encoding="utf-8") as stock_file:
-        json.dump(stock_data, stock_file, ensure_ascii=False, indent=4)
+    with open(stock_path, "w", encoding="utf-8") as FILES["stock.json"]:
+        json.dump(stock_data, FILES["stock.json"], ensure_ascii=False, indent=4)
 
     print(f"{stock}의 주식 가격이 {price}로 설정되었습니다.")
 
@@ -138,8 +131,8 @@ def stock_random():
 
     try:
         # stock.json 읽기
-        with open(stock_path, "r", encoding="utf-8") as stock_file:
-            stock_data = json.load(stock_file)
+        with open(stock_path, "r", encoding="utf-8") as FILES["stock.json"]:
+            stock_data = json.load(FILES["stock.json"])
 
         if not stock_data:
             print("등록된 주식이 없습니다.")
@@ -147,11 +140,11 @@ def stock_random():
 
         # history.json 읽기 (없으면 초기화)
         if not os.path.exists(history_path):
-            with open(history_path, "w", encoding="utf-8") as history_file:
-                json.dump([], history_file, indent=4, ensure_ascii=False)
+            with open(history_path, "w", encoding="utf-8") as FILES["history.json"]:
+                json.dump([], FILES["history.json"], indent=4, ensure_ascii=False)
 
-        with open(history_path, "r", encoding="utf-8") as history_file:
-            history_data = json.load(history_file)
+        with open(history_path, "r", encoding="utf-8") as FILES["history.json"]:
+            history_data = json.load(FILES["history.json"])
 
         # 모든 주식의 가격 랜덤 변경
         for stock_key, stock_info in stock_data.items():
@@ -180,12 +173,12 @@ def stock_random():
             history_data.append(history_entry)
 
         # stock.json 업데이트
-        with open(stock_path, "w", encoding="utf-8") as stock_file:
-            json.dump(stock_data, stock_file, indent=4, ensure_ascii=False)
+        with open(stock_path, "w", encoding="utf-8") as FILES["stock.json"]:
+            json.dump(stock_data, FILES["stock.json"], indent=4, ensure_ascii=False)
 
         # history.json 업데이트
-        with open(history_path, "w", encoding="utf-8") as history_file:
-            json.dump(history_data, history_file, indent=4, ensure_ascii=False)
+        with open(history_path, "w", encoding="utf-8") as FILES["history.json"]:
+            json.dump(history_data, FILES["history.json"], indent=4, ensure_ascii=False)
 
         print("모든 주식의 가격이 랜덤하게 변경되고, 변경 이력이 저장되었습니다!")
 
@@ -304,7 +297,7 @@ class MyClient(discord.Client):
         #     await message.channel.send(f"🎉 {message.author.name}님이 레벨 {user_data[user_id]['level']}로 올랐습니다!")
         #
         # # JSON 데이터 저장
-        # with open(USER_DATA_FILE, "w") as chat_count:
+        # with open(FILES["user_name.json"], "w") as chat_count:
         #     json.dump(user_data, chat_count, indent=4)
         #
         # # XP 상태 출력
@@ -519,7 +512,7 @@ class MyClient(discord.Client):
 
             try:
                 # history.json 데이터 읽기
-                with open(HISTORY_FILE, "r", encoding="utf-8") as history:
+                with open(FILES["history.json"], "r", encoding="utf-8") as history:
                     history_data = json.load(history)
 
                 # 필터링된 데이터 가져오기
@@ -769,8 +762,8 @@ class MyClient(discord.Client):
 
         if message.content.startswith("!납세"):
             # tax_person.json 파일 확인
-            if os.path.exists(TAX_PERSON_FILE):
-                with open(TAX_PERSON_FILE, 'r', encoding="utf-8") as tax_person:
+            if os.path.exists(FILES["tax_person.json"]):
+                with open(FILES["tax_person.json"], 'r', encoding="utf-8") as tax_person:
                     tax_person_data = json.load(tax_person)
             else:
                 tax_person_data = {}
@@ -830,7 +823,7 @@ class MyClient(discord.Client):
 
                             # 납세 기록 추가
                             tax_person_data[user_id] = today_date
-                            with open(TAX_PERSON_FILE, 'w', encoding="utf-8") as tax_person:
+                            with open(FILES["tax_person.json"], 'w', encoding="utf-8") as tax_person:
                                 json.dump(tax_person_data, tax_person, ensure_ascii=False, indent=4)
 
                             await message.channel.send(f"납세가 완료되었습니다. {hundred_million_tax_amount} 원이 차감되었습니다.")
@@ -863,7 +856,7 @@ class MyClient(discord.Client):
 
                             # 납세 기록 추가
                             tax_person_data[user_id] = today_date
-                            with open(TAX_PERSON_FILE, 'w', encoding="utf-8") as tax_person:
+                            with open(FILES["tax_person.json"], 'w', encoding="utf-8") as tax_person:
                                 json.dump(tax_person_data, tax_person, ensure_ascii=False, indent=4)
 
                             await message.channel.send(f"납세가 완료되었습니다. {tax_amount} 원이 차감되었습니다.")
@@ -1125,7 +1118,7 @@ class MyClient(discord.Client):
                 return
 
             # 파일 경로 및 변수 설정
-            account_path = ACCOUNT_FILE
+            account_path = FILES["account.json"]
             gamble_config_path = os.path.join(FOLDER, "gamble_config.json")
             gamble_reward_path = os.path.join(FOLDER, "gamble_reward.json")
             lotto_path = os.path.join(FOLDER, "lotto.json")
@@ -1257,11 +1250,11 @@ class MyClient(discord.Client):
             user_id = str(message.author.id)  # 유저 ID 가져오기
 
             # 계좌 정보 불러오기
-            with open(ACCOUNT_FILE, 'r') as account:
+            with open(FILES["account.json"], 'r') as account:
                 account_data = json.load(account)
 
             # 주식 정보 불러오기
-            with open(STOCK_FILE, 'r') as stock:
+            with open(FILES["stock.json"], 'r') as stock:
                 stock_data = json.load(stock)
 
             # 유저가 계좌를 가지고 있는지 확인
@@ -1298,7 +1291,7 @@ class MyClient(discord.Client):
             account_data[user_id]["stocks"][stock_code] += quantity  # 주식 보유량 업데이트
 
             # 업데이트된 계좌 정보 저장
-            with open(ACCOUNT_FILE, 'w') as account:
+            with open(FILES["account.json"], 'w') as account:
                 json.dump(account_data, account, indent=4)
 
             user_id = str(message.author.id)  # 유저 ID 가져오기
@@ -1353,11 +1346,11 @@ class MyClient(discord.Client):
             user_id = str(message.author.id)  # 유저 ID 가져오기
 
             # 계좌 정보 불러오기
-            with open(ACCOUNT_FILE, 'r') as account:
+            with open(FILES["account.json"], 'r') as account:
                 account_data = json.load(account)
 
             # 주식 정보 불러오기
-            with open(STOCK_FILE, 'r') as stock:
+            with open(FILES["stock.json"], 'r') as stock:
                 stock_data = json.load(stock)
 
             # 유저가 계좌를 가지고 있는지 확인
@@ -1390,7 +1383,7 @@ class MyClient(discord.Client):
                 del account_data[user_id]["stocks"][stock_code]
 
             # 업데이트된 계좌 정보 저장
-            with open(ACCOUNT_FILE, 'w') as account:
+            with open(FILES["account.json"], 'w') as account:
                 json.dump(account_data, account, indent=4)
 
             user_id = str(message.author.id)  # 유저 ID 가져오기
@@ -1876,7 +1869,7 @@ class MyClient(discord.Client):
             user_id = str(message.author.id)  # 유저 ID 가져오기
 
             # 계좌 정보 불러오기
-            with open(ACCOUNT_FILE, 'r') as account:
+            with open(FILES["account.json"], 'r') as account:
                 account_data = json.load(account)
 
             # 필요한 인자 받기 (목표 유저와 금액)
@@ -1907,7 +1900,7 @@ class MyClient(discord.Client):
             account_data[target_user]["cash"] += transfer_amount  # 받는 사람 추가
 
             # 계좌 업데이트
-            with open(ACCOUNT_FILE, 'w') as account:
+            with open(FILES["account.json"], 'w') as account:
                 json.dump(account_data, account, indent=4)
 
             await message.channel.send(f"{transfer_amount}원이 {target_user}님에게 이체되었습니다.")
@@ -1976,7 +1969,7 @@ class MyClient(discord.Client):
             # 주식 정보 출력 및 자산 계산
             stock_message = ""
             total_stock_value = 0  # 주식 총 가치를 계산할 변수
-            with open(STOCK_FILE, "r", encoding="utf-8") as stock:
+            with open(FILES["stock.json"], "r", encoding="utf-8") as stock:
                 stock_data = json.load(stock)
 
             for stock_key, quantity in stocks.items():
@@ -2292,7 +2285,4 @@ class MyClient(discord.Client):
         chatlog.write(f"{edittime} 에 {after.guild.name} 서버의 {after.channel} 에서 {after.author} 가 {before.author} 에 의해 {before.created_at} 에 작성된 ' {bc} ' 를 ' {ac} ' 로 수정 \n")
         chatlog.close()
 
-intents = discord.Intents.default()
-intents.message_content = True
-client = MyClient(intents=intents)
 client.run('MTMwNDgwNzE0MTYyMTYzMzAzNA.GJtWRM.Hdz_3S8j0BCI_ypnmsv-rOO9zcAKHf5GNi2fy0')
